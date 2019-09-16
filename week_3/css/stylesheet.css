@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+.aqua { 
+	background-color: #16a9c7;
+}
+
+.green {
+	background-color: green;
+}
+
+.lightblue {
+	background-color: lightblue;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.red {
+	background-color: red;
+}
+
+.whitesmoke {
+	background-color: whitesmoke;
+}
+
+.yellow {
+	background-color: #fcdb03;
+}
