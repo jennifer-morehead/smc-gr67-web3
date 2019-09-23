@@ -40,3 +40,9 @@
 
 /*///MARGINS//*/
 
+#hero-image {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e9/Borabora-LeMeridien-Aerial2-HD.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

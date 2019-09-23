@@ -10,59 +10,31 @@
 
 /*///COLORS///*/
 
-.aqua { 
-	background-color: #16a9c7;
-}
+/* Color Theme Swatches in Hex */
+.blue { background-color: #3B568C; }
+.aqua-deep{ background-color: #49B3BF; }
+.aqua-medium { background-color: #55D9D9; }
+.aqua-light { background-color: #80F2E7; }
+.gray { background-color: #BFB9B8; }
 
-.green {
-	background-color: green;
-}
+.mute-blue { background-color: #466B73; }
+.soft-black { background-color: #37403E; }
+.dark-gray { background-color: #878C80;}
+.light-gray { background-color: #D3D9C7;  }
+.natural { background-color: #EEF2DF; }
 
-.lightblue {
-	background-color: lightblue;
-}
+/*///IMAGES///*/
 
-.pink {
-	background-color: pink;
-}
-
-.red {
-	background-color: red;
-}
-
-.whitesmoke {
-	background-color: whitesmoke;
-}
-
-.yellow {
-	background-color: #fcdb03;
+#hero-image {
+  background-image: url('https://images.pexels.com/photos/2807379/pexels-photo-2807379.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-color: #cccccc;/*use if image is unavailable*/
+  background-position: 50% 50%;;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*///OVERRIDE BOOTSTRAP//*/
-.alert-primary {
-		color: #572e63;
-		background-color: #9b6fa8;
-		border-color: #431452;
-}
 
-/*this will not work*/
-.navbar-toggler {
-		color: #572e63;
-		border-color: #431452;
-}
-
-/*this will work*/
-/*follow the specificity of the classes*/
-/*use inspector as a guide*/
-.navbar-light .navbar-toggler {
-		color: #572e63;
-		background-color: #9b6fa8;
-		border-color: #431452;
-}
-
-.text-muted {
-	
-}
 
 
 
