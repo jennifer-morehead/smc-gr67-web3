@@ -39,10 +39,20 @@
 
 p{
 	font-family: 'Merriweather', serif;
+	color: #37403E;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Montserrat', sans-serif;
+	color: #37403E;
+}
+
+article h2 {
+	font-weight: 600;
+}
+
+article h4 {
+	font-weight: 600;
 }
 
 .card-title {
@@ -58,6 +68,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
+
 
 .navbar-brand {
 	font-family: 'Montserrat', sans-serif;
