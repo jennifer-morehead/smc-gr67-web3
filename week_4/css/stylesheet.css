@@ -17,12 +17,14 @@
 .aqua-light { background-color: #80F2E7; }
 .gray { background-color: #BFB9B8; }
 
-.mute-blue { background-color: #466B73; }
-.soft-black { background-color: #37403E; }
-.dark-gray { background-color: #878C80;}
-.light-gray { background-color: #D3D9C7;  }
-.natural { background-color: #EEF2DF; }
+.mute-blue-bg { background-color: #466B73; }
+.soft-black-bg { background-color: #37403E; }
+.dark-gray-bg { background-color: #878C80;}
+.light-gray { color: #D3D9C7;}
+.light-gray-bg { background-color: #D3D9C7;}
 
+.natural { color: #F7F6F2;}
+.natural-bg { background-color: #F7F6F2;}
 /*///IMAGES///*/
 
 #hero-image {
@@ -35,6 +37,28 @@
 
 /*///OVERRIDE BOOTSTRAP//*/
 
+p{
+	font-family: 'Merriweather', serif;
+}
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat', sans-serif;
+}
 
+.card-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
 
+.card-text {
+	font-family: 'Merriweather', serif;
+}
+
+.display-4  {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+}
