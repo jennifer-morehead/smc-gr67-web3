@@ -100,6 +100,10 @@ article p {
 	font-weight: 600;
 }
 
+.fa-route:hover {
+	color: #F7F6F2;
+}
+
 
 .navbar-dark .navbar-brand {
 	font-family: 'Montserrat', sans-serif;
