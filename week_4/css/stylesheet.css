@@ -106,3 +106,14 @@ article p {
 	font-weight: 600;
 	color: #F7F6F2;
 }
+
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+
+.navbar-dark .navbar-toggler:hover {
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+  }
