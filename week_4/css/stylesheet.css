@@ -75,10 +75,13 @@ article p {
 	border:none;
 }
 
+
 .btn-secondary:focus {
 	color: #F7F6F2;
 	background-color: #54676D;
-	border:none;	
+	border:none;
+	/*//not recommended to remove box-shadow//*/
+	box-shadow: none;
 }
 
 .card-body {
