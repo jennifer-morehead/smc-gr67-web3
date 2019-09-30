@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!--   __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+-->
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900|Montserrat:400,600,800&display=swap"
+		rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+	<title>Jennifer Morehead | Web 3 | Week 05</title>
+</head>
+
+<body class="natural-bg">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark eggplant-bg mb-5">
+			<a class="navbar-brand" href="index.html">BuyBuy</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-shopping-basket"></i>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Cart<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item mr-2">
+						<a class="nav-link" href="#">About</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--END NAVBAR-->
+	</header>
+
+	<main role="main" class="mb-5">
+		<section>
+
+			<form action="" method="get" autocomplete="on" class="needs-validation mb-5" novalidate>
+				<div class="container">
+					<div class="row justify-content-center mb-4">
+						<div class="col-10 col-md-5">
+							<h5>Shipping</h5>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<input type="text" class="form-control" id="shippingFirstName"
+										placeholder="First Name" required>
+								</div>
+								<div class="form-group col-md-6">
+									<input type="text" class="form-control" id="shippingLastName" placeholder="LastName"
+										required>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<input type="email" class="form-control" id="shippingEmail" placeholder="john@gmail.com"
+									required>
+									<div class="invalid-feedback">
+										Please enter a valid email.
+									</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="shippingAddress" placeholder="1234 Main St"
+									required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="shippingAddress2"
+									placeholder="Apartment, studio, or floor">
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<input type="text" class="form-control" id="shippingCity" placeholder="City"
+										required>
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="shippingState" placeholder="State"
+										required>
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="shippingZip" placeholder="Zip" required>
+								</div>
+							</div>
+
+							<!-- Default switch -->
+							<div class="custom-control custom-switch mb-3">
+								<input type="checkbox" class="custom-control-input" id="customSwitches"
+									onclick="SetBilling(this.checked);">
+								<label class="custom-control-label" for="customSwitches"></label>Billing Same as
+									Shipping</label>
+							</div>
+						</div>
+						<!--END SHIPPING-->
+						<div class="col-10 col-md-5">
+							<h5>Billing</h5>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<input type="name" class="form-control" id="billingFirstName"
+										placeholder="First Name" required>
+								</div>
+								<div class="form-group col-md-6">
+									<input type="name" class="form-control" id="billingLastName" placeholder="LastName"
+										required>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="billingEmail" placeholder="john@gmail.com"
+									required>
+									<div class="invalid-feedback">
+										Please enter a valid email.
+									</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="billingAddress" placeholder="1234 Main St"
+									required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="billingAddress2"
+									placeholder="Apartment, studio, or floor">
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<input type="text" class="form-control" id="billingCity" placeholder="City"
+										required>
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="billingState" placeholder="State"
+										required>
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="billingZip" placeholder="Zip" required>
+								</div>
+							</div>
+
+						</div>
+						<!--END BILLING-->
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-10">
+							<h5>Payment</h5>
+							<div class="form-group">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions"
+										id="inlineRadio1" value="option1">
+									<label class="form-check-label" for="inlineRadio1">Credit Card</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions"
+										id="inlineRadio3" value="option3">
+									<label class="form-check-label" for="inlineRadio3">Gift Card</label>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label class="name" for="creditCardName">Name (as it appears on your card)</label>
+									<input type="name" class="form-control" id="creditCardName"
+										placeholder="Ex: John Smith" required>
+
+								</div>
+								<div class="form-group col-md-6">
+									<label class="name" for="creditCardName">Card Number</label>
+									<input type="name" class="form-control" id="creditCardNumber"
+										placeholder="1234 4098 3987 1234" required>
+
+								</div>
+							</div>
+							<div class="form-row mb-3">
+								<div class="form-group col-md-6">
+									<label class="name" for="creditCardExpiry">Expiry Date</label>
+									<input type="name" class="form-control" id="creditCardExpiry" placeholder="01/20"
+										required>
+
+								</div>
+								<div class="form-group col-md-6">
+									<label class="name" for="creditCardSecurity">Security Code</label>
+									<input type="name" class="form-control" id="creditCardSecurity"
+										placeholder="&#8226;&#8226;&#8226;" required>
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+
+						</div>
+						<!--END PAYMENT-->
+					</div>
+					<!--END PAYMENT-->
+
+				</div>
+			</form>
+
+
+			</div>
+
+		</section>
+
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function () {
+				'use strict';
+				window.addEventListener('load', function () {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function (form) {
+						form.addEventListener('submit', function (event) {
+							if (form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+
+		<!--IS SHIPPING SAME AS BILLING-->
+		<script>
+			function SetBilling(checked) {
+				if (checked) {
+					document.getElementById('billingFirstName').value = document.getElementById('shippingFirstName').value;
+					document.getElementById('billingLastName').value = document.getElementById('shippingLastName').value;
+					document.getElementById('billingEmail').value = document.getElementById('shippingEmail').value;
+					document.getElementById('billingAddress').value = document.getElementById('shippingAddress').value;
+					document.getElementById('billingAddress').value = document.getElementById('shippingAddress2').value;
+					document.getElementById('billingCity').value = document.getElementById('shippingCity').value;
+					document.getElementById('billingState').value = document.getElementById('shippingState').value;
+					document.getElementById('billingZip').value = document.getElementById('shippingZip').value;
+				} else {
+					document.getElementById('billingFirstName').value = '';
+					document.getElementById('billingLirstName').value = '';
+					document.getElementById('billingEmail').value = '';
+					document.getElementById('billingAddress').value = '';
+					document.getElementById('billingAddress2').value = '';
+					document.getElementById('billingCity').value = '';
+					document.getElementById('billingState').value = '';
+					document.getElementById('billingZip').value = '';
+				}
+			}
+		</script>
+
+
+
+
+
+	</main>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- popper relies on jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
