@@ -24,9 +24,6 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/stylesheet.css">
 
-	<!-- Custom JS -->
-	<script src="js/script.js"></script>
-
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
 
@@ -61,8 +58,9 @@
 
 	<main role="main" class="mb-5">
 		<section>
-
-			<form action="" method="get" autocomplete="on" class="needs-validation mb-5" novalidate>
+			<!--novalidate disables the browser default feedback tooltips, but still provides 
+				access to the form validation APIs in JavaScript-->
+			<form action="" method="get" name="checkout" autocomplete="on" class="needs-validation mb-5" novalidate>
 				<div class="container">
 					<div class="row justify-content-center mb-4">
 						<div class="col-10 col-md-5" id="shippingGroup">
@@ -70,41 +68,71 @@
 							<div class="form-row">
 								<div class="form-group col-md-6">
 									<input type="text" class="form-control" id="shippingFirstName"
-										placeholder="First Name" required>
+										placeholder="First Name" oninput="alphaOnly();" required>
+									<div class="invalid-input">
+										Please enter a valid name.
+									</div>
+									<div class="invalid-feedback">
+										Please enter your first name.
+									</div>
 								</div>
 								<div class="form-group col-md-6">
 									<input type="text" class="form-control" id="shippingLastName" placeholder="LastName"
-										required>
+										oninput="alphaOnly();" required>
+									<div class="invalid-input">
+										Please enter a valid name.
+									</div>
+									<div class="invalid-feedback">
+										Please enter your last name.
+									</div>
 								</div>
 							</div>
-						
+
 							<div class="form-group">
 								<input type="email" class="form-control" id="shippingEmail" placeholder="john@gmail.com"
 									required>
+								<div class="invalid-feedback">
+									Please enter a valid email.
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-9 mb-3">
+									<input type="text" class="form-control" id="shippingAddress"
+										placeholder="1234 Main St" required>
 									<div class="invalid-feedback">
-										Please enter a valid email.
+										Please enter your address.
 									</div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="shippingAddress" placeholder="1234 Main St"
-									required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="shippingAddress2"
-									placeholder="Apartment, studio, or floor">
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+
+								</div>
 							</div>
 
 							<div class="form-row">
 								<div class="col-md-6 mb-3">
 									<input type="text" class="form-control" id="shippingCity" placeholder="City"
-										required>
+										oninput="alphaOnly();" required>
+										<div class="invalid-input">
+												Please enter a valid city.
+											</div>
+									<div class="invalid-feedback">
+										Please enter your city.
+									</div>
 								</div>
 								<div class="col-md-3 mb-3">
 									<input type="text" class="form-control" id="shippingState" placeholder="State"
 										required>
+									<div class="invalid-feedback">
+										Please enter your state.
+									</div>
 								</div>
 								<div class="col-md-3 mb-3">
 									<input type="text" class="form-control" id="shippingZip" placeholder="Zip" required>
+									<div class="invalid-feedback">
+										Please enter your zip code.
+									</div>
 								</div>
 							</div>
 
@@ -113,49 +141,70 @@
 								<input type="checkbox" class="custom-control-input" id="customSwitches"
 									onclick="toggleBilling();">
 								<label class="custom-control-label" for="customSwitches"></label>Billing Same as
-									Shipping</label>
+								Shipping</label>
 							</div>
 						</div>
 						<!--END SHIPPING-->
+
 						<div class="col-10 col-md-5" id="billingGroup">
 							<h5>Billing</h5>
 							<div class="form-row">
 								<div class="form-group col-md-6">
 									<input type="name" class="form-control" id="billingFirstName"
 										placeholder="First Name" required>
+									<div class="invalid-feedback">
+										Please enter your first name.
+									</div>
 								</div>
 								<div class="form-group col-md-6">
 									<input type="name" class="form-control" id="billingLastName" placeholder="LastName"
 										required>
+									<div class="invalid-feedback">
+										Please enter your last name.
+									</div>
 								</div>
 							</div>
 							<div class="form-group">
 								<input type="email" class="form-control" id="billingEmail" placeholder="john@gmail.com"
 									required>
+								<div class="invalid-feedback">
+									Please enter a valid email.
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-9 mb-3">
+									<input type="text" class="form-control" id="shippingAddress"
+										placeholder="1234 Main St" required>
 									<div class="invalid-feedback">
-										Please enter a valid email.
+										Please enter your address.
 									</div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="billingAddress" placeholder="1234 Main St"
-									required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="billingAddress2"
-									placeholder="Apartment, studio, or floor">
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+
+								</div>
 							</div>
 
 							<div class="form-row">
 								<div class="col-md-6 mb-3">
 									<input type="text" class="form-control" id="billingCity" placeholder="City"
 										required>
+									<div class="invalid-feedback">
+										Please enter your city.
+									</div>
 								</div>
 								<div class="col-md-3 mb-3">
 									<input type="text" class="form-control" id="billingState" placeholder="State"
 										required>
+									<div class="invalid-feedback">
+										Please enter your state.
+									</div>
 								</div>
 								<div class="col-md-3 mb-3">
 									<input type="text" class="form-control" id="billingZip" placeholder="Zip" required>
+									<div class="invalid-feedback">
+										Please enter your zip code.
+									</div>
 								</div>
 							</div>
 
@@ -206,7 +255,8 @@
 								</div>
 							</div>
 
-							<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+							<button type="submit" value="submit"
+								class="btn btn-primary btn-lg btn-block">Submit</button>
 
 						</div>
 						<!--END PAYMENT-->
@@ -220,55 +270,6 @@
 			</div>
 
 		</section>
-
-<!--
-		<script>
-			// Example starter JavaScript for disabling form submissions if there are invalid fields
-			(function () {
-				'use strict';
-				window.addEventListener('load', function () {
-					// Fetch all the forms we want to apply custom Bootstrap validation styles to
-					var forms = document.getElementsByClassName('needs-validation');
-					// Loop over them and prevent submission
-					var validation = Array.prototype.filter.call(forms, function (form) {
-						form.addEventListener('submit', function (event) {
-							if (form.checkValidity() === false) {
-								event.preventDefault();
-								event.stopPropagation();
-							}
-							form.classList.add('was-validated');
-						}, false);
-					});
-				}, false);
-			})();
-		</script>
-	-->
-	<!--IS SHIPPING SAME AS BILLING
-		
-		<script>
-			function SetBilling(checked) {
-				if (checked) {
-					document.getElementById('billingFirstName').value = document.getElementById('shippingFirstName').value;
-					document.getElementById('billingLastName').value = document.getElementById('shippingLastName').value;
-					document.getElementById('billingEmail').value = document.getElementById('shippingEmail').value;
-					document.getElementById('billingAddress').value = document.getElementById('shippingAddress').value;
-					document.getElementById('billingAddress').value = document.getElementById('shippingAddress2').value;
-					document.getElementById('billingCity').value = document.getElementById('shippingCity').value;
-					document.getElementById('billingState').value = document.getElementById('shippingState').value;
-					document.getElementById('billingZip').value = document.getElementById('shippingZip').value;
-				} else {
-					document.getElementById('billingFirstName').value = '';
-					document.getElementById('billingLirstName').value = '';
-					document.getElementById('billingEmail').value = '';
-					document.getElementById('billingAddress').value = '';
-					document.getElementById('billingAddress2').value = '';
-					document.getElementById('billingCity').value = '';
-					document.getElementById('billingState').value = '';
-					document.getElementById('billingZip').value = '';
-				}
-			}
-		</script>
-		-->
 
 
 
@@ -287,6 +288,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>

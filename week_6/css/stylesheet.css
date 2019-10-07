@@ -10,9 +10,6 @@
 
 /*///COLORS///*/
 
-
-
-
 /* Color Theme Swatches in Hex */
 .eggplant { color: #665858; }
 .eggplant-bg { background-color: #665858; }
@@ -24,16 +21,6 @@
 .mauve { color: #B39A9A; }
 .mygray { color: #665858;}
 
-
-/*///IMAGES///*/
-
-#hero-image {
-  background-image: url('https://images.pexels.com/photos/2807379/pexels-photo-2807379.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-  background-color: #cccccc;/*use if image is unavailable*/
-  background-position: 50% 50%;;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*///OVERRIDE BOOTSTRAP//*/
 
@@ -68,8 +55,6 @@ input[type=text] {
 */
 
 
-
-
 .btn-primary {
 	background-color: #B39A9A;
 	border:none;
@@ -102,14 +87,14 @@ input[type=text] {
 	color: #F7F6F2;
 }
 
-/*// remove red x, update border color//*/
+/* remove red x, update border color*/
 .form-control.is-invalid, .was-validated .form-control:invalid {
   background-image: none;
   border-color: #947f7f;
   border-width: 2px;
 }
 
-/*// remove green check, update boder color //*/
+/*remove green check, update boder color*/
 .form-control.isvalid, .was-validated .form-control:valid {
   background-image: none;
   border-color: #ced4da;
@@ -120,7 +105,15 @@ input[type=text] {
 }
 
 .invalid-feedback {
-	color: #665858;;
+	color: #665858;
+}
+
+/*custom invalid response per input type*/
+.invalid-input {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
 }
 
 .navbar-dark .navbar-brand {
@@ -139,4 +132,6 @@ input[type=text] {
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
   }
+
+
 

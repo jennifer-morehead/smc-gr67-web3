@@ -8,7 +8,6 @@
 */
 
 
-
 function toggleBilling() {
 	if (document.getElementById('customSwitches').checked == true) {
 		document.getElementById('billingGroup').style.display = "none";
@@ -20,7 +19,28 @@ function toggleBilling() {
 	}
 }
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
+
+function alphaOnly() {
+	var fname = document.getElementById('shippingFirstName');
+	var lname = document.getElementById('shippingLastName');
+	var city = document.getElementById('shippingCity');
+	var errorNumbers = document.getElementsByClassName('invalid-input');
+	var numbers = "^[0-9*#+@]+$";
+	if (fname.value.match(numbers) && document.activeElement == fname) {
+		errorNumbers[0].style.display = "block";
+	} else if (lname.value.match(numbers) && document.activeElement == lname) {
+		errorNumbers[1].style.display = "block";
+	} else if (city.value.match(numbers) && document.activeElement == city) {
+		errorNumbers[2].style.display = "block";
+	} else {
+		errorNumbers[0].style.display = "none";
+		errorNumbers[1].style.display = "none";
+		errorNumbers[1].style.display = "none";
+	}
+}
+
+
 (function () {
 	'use strict';
 	window.addEventListener('load', function () {
@@ -38,3 +58,5 @@ function toggleBilling() {
 		});
 	}, false);
 })();
+
+
