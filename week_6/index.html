@@ -90,7 +90,10 @@
 
 							<div class="form-group">
 								<input type="email" class="form-control" id="shippingEmail" placeholder="john@gmail.com"
-									required>
+								oninput="emailOnly();"required>
+								<div class="invalid-input">
+									Please enter a valid email.
+								</div>
 								<div class="invalid-feedback">
 									Please enter a valid email.
 								</div>
@@ -114,22 +117,29 @@
 								<div class="col-md-6 mb-3">
 									<input type="text" class="form-control" id="shippingCity" placeholder="City"
 										oninput="alphaOnly();" required>
-										<div class="invalid-input">
-												Please enter a valid city.
-											</div>
+									<div class="invalid-input">
+										Please enter a valid city.
+									</div>
 									<div class="invalid-feedback">
 										Please enter your city.
 									</div>
 								</div>
 								<div class="col-md-3 mb-3">
 									<input type="text" class="form-control" id="shippingState" placeholder="State"
-										required>
+									oninput="statesOnly();" required>
+									<div class="invalid-input">
+										Please enter a valid state.
+									</div>
 									<div class="invalid-feedback">
 										Please enter your state.
 									</div>
 								</div>
 								<div class="col-md-3 mb-3">
-									<input type="text" class="form-control" id="shippingZip" placeholder="Zip" required>
+									<input type="text" class="form-control" id="shippingZip" placeholder="Zip" 
+									oninput="numbersOnly();" required>
+									<div class="invalid-input">
+										Please enter a valid zip code.
+									</div>
 									<div class="invalid-feedback">
 										Please enter your zip code.
 									</div>
