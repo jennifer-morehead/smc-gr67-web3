@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+/* Color Theme Swatches in Hex */
+.white { color: white; }
+.blue { color: #04BFBF; }
+.blue-bg { background-color: #04BFBF; }
+.lime { color: #B2D235; }
+.lime-bg { background-color: #B2D235; }
+.orange { color: #F2B705; }
+.orange-bg { background-color: #F2B705; }
+.myblack { color: #252526; }
+.mygray { color: #3E3E40; }
+
+/*TEST COLORS*/
+.red-bg {background-color: red;}
+.pink-bg {background-color: pink;}
+.purple-bg {background-color: purple;}
+
+
+/*///OVERRIDE BOOTSTRAP//*/
+/*h1 Bootstrap heading (2.5rem = 40px)
+h2 Bootstrap heading (2rem = 32px)
+h3 Bootstrap heading (1.75rem = 28px)
+h4 Bootstrap heading (1.5rem = 24px)
+h5 Bootstrap heading (1.25rem = 20px)
+h6 Bootstrap heading (1rem = 16px)*/
+
+a,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+  color: #252526;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* Adjust Header Size For Mobile*/
+  @media (max-width: 575.98px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+address {
+  font-family: 'Lato',sans-serif;
+  font-size: 16px;
+}
+
+body {
+	color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+body,html {
+  height: 100%;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+  footer a {
+    color: white;
+  }
+
+  footer h6 {
+    color: white;
+  }
+
+
+
+nav a {
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #F2B705;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  color: #3E3E40;
+}
+
+.about-img {
+    background: url("../images/frogs-pexels.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.active a {
+  color:#F2B705;
+}
+
+.alert-primary {
+  background-color: #F2B705;
+  border: none;
+  border-radius: 50px;
+}
+
+  .alert-primary:hover {
+      background-color: #f2ab05;
+  }
+
+.alert-primary .alert-link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #F2B705;
+  border: none;
+  border-radius: 25px;
+}
+  
+  .btn-primary:hover {
+    background-color: #f2ab05;
+  }
+
+.carousel-item h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    line-height: 150%;
+    color: white;
+  }
+
+/*FOR STICKY FOOTER*/
+.content {
+  flex: 1 0 auto;
+}
+
+/*ABOUT HERO TEXT*/
+.jumbotron h1 {
+  margin: 0;
+/* added padding to make image bigger, but this seems wrong*/ 
+/*  padding: 50px 0;*/
+  width: 90%;
+  position: relative;
+/*  why is top position not working?*/  
+  top: 15%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Merriweather';
+  font-weight: 700;
+  line-height: 150%;
+  color: white;
+}
+
+  /* Adjust Header Size For Mobile*/
+  @media (max-width: 575.98px) {
+    .jumbotron h1 {
+    top:25%; left: 50%;
+    font-size: 21px;
+    }
+  }
+
+/*Logo Size*/
+.navbar-brand {
+  font-size: 24px;
+  color: #F2B705 !important;
+  font-weight: 700;
+}
+
+.navbar-dark .navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #F7F6F2;
+}
+
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+
+.navbar-dark .navbar-toggler:hover {
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+  }
+
+
+
