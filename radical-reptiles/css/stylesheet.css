@@ -14,10 +14,12 @@
 .white { color: white; }
 .blue { color: #04BFBF; }
 .blue-bg { background-color: #04BFBF; }
+.lightgreen {background-color: #ECF5D8;}
 .lime { color: #B2D235; }
 .lime-bg { background-color: #B2D235; }
-.orange { color: #F2B705; }
-.orange-bg { background-color: #F2B705; }
+.darkgreen-bg { background-color: #658025; }
+.orange { color: #F78D20; }
+.orange-bg { background-color: #F78D20; }
 .myblack { color: #252526; }
 .mygray { color: #3E3E40; }
 
@@ -28,38 +30,35 @@
 
 
 /*///OVERRIDE BOOTSTRAP//*/
-/*h1 Bootstrap heading (2.5rem = 40px)
-h2 Bootstrap heading (2rem = 32px)
+/*h1 Bootstrap heading (2.5rem = 40px) 
+h2 Bootstrap heading (2rem = 32px)  
 h3 Bootstrap heading (1.75rem = 28px)
 h4 Bootstrap heading (1.5rem = 24px)
-h5 Bootstrap heading (1.25rem = 20px)
-h6 Bootstrap heading (1rem = 16px)*/
+h5 Bootstrap heading (1.25rem = 20px) custom 18px
+h6 Bootstrap heading (1rem = 16px)*/ 
 
 a,h1,h2,h3,h4,h5,h6 {
   font-family: 'Lato', sans-serif;
   color: #252526;
 }
 
+/*page header only*/
 h1 {
-  font-size: 36px;
   font-weight: 300; 
   letter-spacing: 1px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
 }
 
 /* Adjust Header Size For Mobile*/
   @media (max-width: 575.98px) {
     h1 {
-      font-size: 30px;
+      font-size: 1.875rem;/*36px*/
     }
   }
+
+h5 {
+  font-size: 18px;
+}
+
 
 address {
   font-family: 'Lato',sans-serif;
@@ -67,7 +66,7 @@ address {
 }
 
 body {
-	color: white;
+  color: white;
   display: flex;
   flex-direction: column;
 }
@@ -88,18 +87,16 @@ footer {
     color: white;
   }
 
-
-
 nav a {
     font-weight: 700;
 }
 
 nav a:hover {
-    color: #F2B705;
+    color: #F78D20;
 }
 
 p {
-  font-family: 'Merriweather', serif;
+  font-family: 'Lora', serif;
   color: #3E3E40;
 }
 
@@ -109,21 +106,22 @@ p {
 }
 
 .active a {
-  color:#F2B705;
+  color:#F78D20;
 }
 
 .alert-primary {
-  background-color: #F2B705;
+  background-color: #F78D20;
   border: none;
   border-radius: 50px;
 }
 
   .alert-primary:hover {
-      background-color: #f2ab05;
+      background-color: #DF801E;
   }
 
 .alert-primary .alert-link {
   font-size: 20px;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
 }
@@ -138,14 +136,23 @@ p {
     background-color: #f2ab05;
   }
 
-.carousel-item h1 {
+.carousel-item h2 {
     position: absolute;
     top: 10%;
     left: 5%;
-    font-family: 'Merriweather';
+    font-family: 'Lora';
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 150%;
+    letter-spacing: .5px;
+    line-height: 120%;
     color: white;
+  }
+
+   /* Adjust Header Size For Mobile*/
+	@media (max-width: 575.98px) {
+	.carousel-item h2 {
+	font-size: 1.75rem;
+  		}
   }
 
 /*FOR STICKY FOOTER*/
@@ -163,7 +170,7 @@ p {
 /*  why is top position not working?*/  
   top: 15%; left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Merriweather';
+  font-family: 'Lora', serif;
   font-weight: 700;
   line-height: 150%;
   color: white;
@@ -179,22 +186,11 @@ p {
 
 /*Logo Size*/
 .navbar-brand {
-  font-size: 24px;
-  color: #F2B705 !important;
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;/*24px*/
+  letter-spacing: .5px;
+  color: #F78D20 !important;
   font-weight: 700;
-}
-
-.navbar-dark .navbar-brand {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	color: #F7F6F2;
-}
-
-.navbar-dark .navbar-toggler {
-	border: none;
-}
-
-.navbar-dark .navbar-toggler:hover {
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {
