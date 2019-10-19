@@ -12,11 +12,13 @@
 
 /* Color Theme Swatches in Hex */
 .white { color: white; }
+.offwhite-bg {background-color: #f9f7f4;}
 .blue { color: #04BFBF; }
 .blue-bg { background-color: #04BFBF; }
 .lightgreen {background-color: #ECF5D8;}
 .lime { color: #B2D235; }
 .lime-bg { background-color: #B2D235; }
+.darkgreen { color: #658025; }
 .darkgreen-bg { background-color: #658025; }
 .orange { color: #F78D20; }
 .orange-bg { background-color: #F78D20; }
@@ -30,12 +32,14 @@
 
 
 /*///OVERRIDE BOOTSTRAP//*/
-/*h1 Bootstrap heading (2.5rem = 40px) 
+/*
+h1 Bootstrap heading (2.5rem = 40px) 
 h2 Bootstrap heading (2rem = 32px)  
 h3 Bootstrap heading (1.75rem = 28px)
 h4 Bootstrap heading (1.5rem = 24px)
 h5 Bootstrap heading (1.25rem = 20px) custom 18px
-h6 Bootstrap heading (1rem = 16px)*/ 
+h6 Bootstrap heading (1rem = 16px)
+*/ 
 
 a,h1,h2,h3,h4,h5,h6 {
   font-family: 'Lato', sans-serif;
@@ -43,20 +47,20 @@ a,h1,h2,h3,h4,h5,h6 {
 }
 
 /*page header only*/
-h1 {
+h1,h2 {
   font-weight: 300; 
   letter-spacing: 1px;
 }
 
 /* Adjust Header Size For Mobile*/
   @media (max-width: 575.98px) {
-    h1 {
-      font-size: 1.875rem;/*36px*/
+    h1,h2{
+      font-size: 1.875rem;/*30px*/
     }
   }
 
 h5 {
-  font-size: 18px;
+  font-size: 1.125rem;/*18px*/
 }
 
 
@@ -66,9 +70,12 @@ address {
 }
 
 body {
-  color: white;
   display: flex;
   flex-direction: column;
+  color: white;
+  background-color:#f9f7f4;
+/*  background-color: #f5f2ed;*/
+/*	background-color: whitesmoke;*/
 }
 
 body,html {
@@ -79,12 +86,9 @@ footer {
   flex-shrink: 0;
 }
 
-  footer a {
-    color: white;
-  }
+  footer h6, footer a, footer address {
+    color: #f9f7f4;
 
-  footer h6 {
-    color: white;
   }
 
 nav a {
@@ -98,11 +102,6 @@ nav a:hover {
 p {
   font-family: 'Lora', serif;
   color: #3E3E40;
-}
-
-.about-img {
-    background: url("../images/frogs-pexels.jpg") center no-repeat;
-    background-size: cover;
 }
 
 .active a {
@@ -136,12 +135,19 @@ p {
     background-color: #f2ab05;
   }
 
+.card {
+	border:none;
+}
+.card, .card-img-top {
+	border-radius: 0;
+}
+
 .carousel-item h2 {
     position: absolute;
     top: 10%;
     left: 5%;
     font-family: 'Lora';
-    font-size: 3rem;
+    font-size: 3rem;/*48px*/
     font-weight: 700;
     letter-spacing: .5px;
     line-height: 120%;
@@ -151,7 +157,8 @@ p {
    /* Adjust Header Size For Mobile*/
 	@media (max-width: 575.98px) {
 	.carousel-item h2 {
-	font-size: 1.75rem;
+	font-size: 1.75rem;/*28px*/
+	line-height: 110%;
   		}
   }
 
@@ -160,30 +167,43 @@ p {
   flex: 1 0 auto;
 }
 
+.img-thumbnail {
+	border: none;
+	border-radius: 0;
+}
+
+.jumbotron {
+	 position: relative;
+}
+
 /*ABOUT HERO TEXT*/
-.jumbotron h1 {
-  margin: 0;
-/* added padding to make image bigger, but this seems wrong*/ 
-/*  padding: 50px 0;*/
-  width: 90%;
-  position: relative;
-/*  why is top position not working?*/  
-  top: 15%; left: 50%;
+/*Postitioning is still absolute to page top, not sure why.
+Using max-width also is not behaving as expected*/
+.jumbotron h2{
+  position: absolute;
+  top: 25%; left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
   font-family: 'Lora', serif;
+  font-size: 3rem;/*48px*/
   font-weight: 700;
-  line-height: 150%;
+  line-height: 120%;
   color: white;
 }
 
   /* Adjust Header Size For Mobile*/
   @media (max-width: 575.98px) {
-    .jumbotron h1 {
-    top:25%; left: 50%;
-    font-size: 21px;
+    .jumbotron h2 {
+    top:20%; left: 50%;
+    font-size: 1.75rem;/*28px*/
+    line-height: 110%;
     }
   }
 
+
+.navbar {
+	background-color: white;
+}
 /*Logo Size*/
 .navbar-brand {
   font-family: 'Lora', serif;
@@ -196,6 +216,19 @@ p {
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
   }
+
+.profile {
+	padding: 0px 30px;
+}
+
+	.profile h6 {
+		letter-spacing: 1px;
+	}
+
+#upcoming h5 {
+	color: #658025;
+	font-weight: 700;
+}
 
 
 

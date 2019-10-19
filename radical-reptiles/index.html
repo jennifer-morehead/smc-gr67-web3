@@ -34,10 +34,10 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg shadow-sm">
-			<a class="navbar-brand orange" href="index.html">Radical <span class="lime">Reptiles</span></a>
+			<a class="navbar-brand orange" href="index.html">Radical <span class="darkgreen">Reptiles</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-frog fa-lg lime"></i>
+				<i class="fas fa-frog fa-lg darkgreen"></i>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,7 +60,7 @@
 		<!--END NAVBAR-->
 	</header>
 
-	<main role="main" class="content mb-5">
+	<main role="main" class="content">
 		<!--CAROUSEL-->
 		<section class="mb-5">
 			<div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -91,7 +91,7 @@
 		<!--CONTENT-->
 		<section>
 			<!--ALERT-->
-			<div class="container mb-5">
+			<div class="container p-0 mb-5">
 				<div class="row justify-content-center">
 					<div class="col-8 col-md-6">
 						<div class="alert alert-primary text-center mb-0" role="alert">
@@ -101,39 +101,58 @@
 				</div>
 			</div>
 			<!--CONTENT-->
-			<div class="container">
+			<div class="container-fluid px-5">
 				<h1 class="text-center mb-5">Upcoming Events</h1>
-				<div class="card-deck">
-					<div class="col-12 col-md-4 mb-3">
+
+				<div class="card-deck" id="upcoming">
+					<div class="col-12 col-md-4 mb-5 p-0">
 						<div class="card">
 							<img src="images/snake-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
+								<div>
+									<i class="d-inline mygray far fa-calendar"></i>
+									<p class="d-inline mx-2 my-0"><small>November 04, 2019</small></p>
+								</div>
+								<hr>
+								<h5 class="card-title">Animal Meet n'Greet</h5>
 								<p class="card-text">This is a longer card with supporting text below as a natural
 									lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								<a href="#" class="text-muted"><small>View Details</small></a>
+
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4 mb-3">
+					<div class="col-12 col-md-4 mb-5 p-0">
 						<div class="card">
 							<img src="images/snake-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
+								<div>
+									<i class="d-inline mygray far fa-calendar"></i>
+									<p class="d-inline mx-2 my-0"><small>November 12, 2019</small></p>
+								</div>
+								<hr>
+								<h5 class="card-title">Family Fun Day</h5>
 								<p class="card-text">This is a longer card with supporting text below as a natural
 									lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							
+								<a href="#" class="text-muted"><small>View Details</small></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4 mb-3">
+					<div class="col-12 col-md-4 mb-5 p-0">
 						<div class="card">
 							<img src="images/snake-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
+								<div>
+									<i class="d-inline mygray far fa-calendar"></i>
+									<p class="d-inline mx-2 my-0"><small>November 29, 2019</small></p>
+								</div>
+								<hr>
+								<h5 class="card-title">Leapin' Lizards</h5>
 								<p class="card-text">This is a longer card with supporting text below as a natural
 									lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							
+								<a href="#" class="text-muted"><small>View Details</small></a>
 							</div>
 						</div>
 					</div>
@@ -143,10 +162,10 @@
 	</main>
 
 	<!--FOOTER-->
-	<footer class="footer darkgreen-bg">
+	<footer class="footer  darkgreen-bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 px-0">
 					<div class="row p-4">
 						<div class="col-12 col-md-3 pb-2">
 							<address>
