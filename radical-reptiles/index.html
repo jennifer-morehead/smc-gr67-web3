@@ -32,25 +32,6 @@
 </head>
 
 <body>
-	<!-- <div class="modal" id="donateModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Get the Latest Happenings </h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Subscibe for email updates on special events and promotions</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="donateSubmit">Submit</button>
-
-				</div>
-			</div>
-		</div>
-	</div> -->
 
 	<!-- DONATE MODAL -->
 	<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModal"
@@ -76,8 +57,8 @@
 								<div class="form-group col-3 p-0 text-center ">
 									<button type="button" class="btn btn-outline-secondary">$10</button>
 								</div>
-								<div class="form-group col-3 p-0 text-center active">
-									<button type="button" class="btn btn-outline-secondary">$20</button>
+								<div class="form-group col-3 p-0 text-center">
+									<button type="button" class="btn btn-outline-secondary active">$20</button>
 								</div>
 								<div class="form-group col-3 p-0 text-center">
 									<button type="button" class="btn btn-outline-secondary">$50</button>
@@ -92,18 +73,17 @@
 											<span class="input-group-text">$</span>
 										</div>
 										<input type="text" class="form-control" placeholder="Custom Amount"
-											aria-label="Amount (to the nearest dollar)">
-
+											id="customAmount" aria-label="Amount (to the nearest dollar)" required>
 									</div>
 								</div>
 								<div class="form-group col-12 text-center">
 									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+										<input class="form-check-input" type="checkbox" id="monthlyAmount"
 											value="option1" checked>
 										<label class="form-check-label" for="inlineCheckbox1">monthly</label>
 									</div>
 									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+										<input class="form-check-input" type="checkbox" id="oneTimeAmount"
 											value="option2">
 										<label class="form-check-label" for="inlineCheckbox2">one-time donation</label>
 									</div>
@@ -111,15 +91,11 @@
 
 
 								<div class="form-group col-12">
-									<input type="submit" class="btn btn-block btn-primary" id="donateSubmite"
+									<input type="submit" class="btn btn-block btn-primary" id="donateSubmit"
 										value="Donate">
 								</div>
 							</div>
-
-
 						</form>
-
-
 					</div>
 					...
 				</div>
@@ -184,13 +160,26 @@
 		</section>
 		<!--CONTENT-->
 		<section>
-			<!--ALERT-->
-			<div class="container p-0 mb-5">
+			<!--DONATE ALERT-->
+			<!-- <div class="container p-0 mb-5">
 				<div class="row justify-content-center">
 					<div class="col-8 col-md-6">
 						<div class="alert alert-primary text-center mb-0" role="alert">
 							<a href="#" data-toggle="modal" data-target="#donateModal" class="alert-link">Save A
 								Snake!</a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!--DONATE ALERT BUTTON-->
+			<div class="container p-0 mb-5">
+				<div class="row justify-content-center">
+					<div class="col-8 col-md-6">
+						<div class="" id="donateButton">
+							<button type="button" class="btn btn-block btn-primary" data-toggle="modal"
+								data-target="#donateModal">
+								Save A Snake!
+							</button>
 						</div>
 					</div>
 				</div>
@@ -319,7 +308,42 @@
 	<!-- Custom JS -->
 	<script src="js/script.js"></script>
 	<script>
+		$('#donateAmount button').click(function () {
+			$('#donateAmount button').removeClass('active');
+			$(this).addClass('active');
+			$('#donateAmount #customAmount').removeAttr('required');
+		}); //highlight selected fixed amount and remove validation from custom amount
 
+		$('#donateAmount #customAmount').focus(function () {
+			$('#donateAmount button').removeClass('active');
+		}) //remove button amount highlight
+
+		$('#donateAmount #oneTimeAmount').focus(function () {
+			$('#donateAmount #monthlyAmount').removeAttr('checked');
+		}) //toggle monthly/one-time
+
+		$('#donateAmount #monthlyAmount').focus(function () {
+			$('#donateAmount #oneTimeAmount').removeAttr('checked');
+		}) //toggle monthly/one-time
+	</script>
+
+	<script>
+		$('input').blur(function () {
+			if ($(this).val() !== "") {
+				var form = $(this).parents('form');
+				console.log($("[type=submit]"));
+				$("[type=submit]").removeClass('disabled').removeAttr('disabled').data('dismiss', 'modal');
+			}
+		})
+
+		$('.modal form').submit(function (e) {
+			e.preventDefault();
+		}) //prevent submit
+
+		$('#donateSubmit').click(function () {
+			$('#donateModal').modal('hide');
+			alert("Thank You!");
+		}); //close if valid entry
 	</script>
 
 </body>

@@ -113,7 +113,7 @@ p {
   color:#F78D20;
 }
 
-#donateAmount .active button{
+#donateAmount .active {
 	color: white;
 	background-color: #F78D20;
 	opacity: .8;
@@ -188,25 +188,37 @@ p {
   flex: 1 0 auto;
 }
 
-.donateAmount .active {
-	background-color: red;
+/*styling for valid entry donate modal*/
+#donateAmount .form-control.isvalid, .was-validated .form-control:valid {
+  background-image: none;
 }
 
+#donateButton button {
+	font-family: Lato, 'sans-serif';
+font-size: 20px;
+font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px 2px;
+
+  
+}
 
 .form-check {
 	color: black;
 }
 
-/*styling for invalid entry*/
+/*styling for invalid entry general modal*/
 .form-control.is-invalid, .was-validated .form-control:invalid {
   background-image: none;
   border-width: 2px;
 }
 
-/*styling for valid entry*/
+/*styling for valid entry general modal*/
 .form-control.isvalid, .was-validated .form-control:valid {
   
 }
+
 
 .invalid-feedback {
 	color: #665858;
