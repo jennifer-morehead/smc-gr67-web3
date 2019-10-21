@@ -32,27 +32,53 @@
 </head>
 
 <body>
-	<div class="modal" id="myModal" tabindex="-1" role="dialog">
+	<!-- SUBSCRIBE MODAL -->
+	<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModal"
+		aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Get the Latest Happenings </h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<p>Subscibe for email updates on special events and promotions</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Submit</button>
+					<div class="container-fluid">
+						<div class="row mx-0 mb-4">
+							<div class="col-12 text-center">
+								<i class="far fa-envelope-open fa-3x darkgreen p-1"></i>
+								<h2 class="p-1">Want to Know More?</h2>
+								<p class="px-5">Be the first to know. Subscibe for email updates and discounts at
+									Radical Reptiles</p>
+							</div>
+						</div>
+						<form action="" method="get" name="subscribe" class="needs-validation px-5" novalidate>
+							<div class="form-row mb-4">
+								<div class="form-group col-12">
+									<input type="email" class="form-control" id="emailEntry"
+										placeholder="Enter your email" required>
+									<div class="invalid-feedback">
+										Please enter your email.
+									</div>
+								</div>
+								<div class="form-group col-12">
+									<input type="submit" class="btn btn-block btn-primary" id="subscribeSubmit"
+										value="Subscribe">
+								</div>
+							</div>
+						</form>
 
+
+					</div>
+					...
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<header>
-		<nav class="navbar navbar-expand-lg shadow-sm">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg shadow-sm mb-5">
 			<a class="navbar-brand orange" href="../index.html">Radical <span class="darkgreen">Reptiles</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,44 +93,44 @@
 					<li class="nav-item mr-2">
 						<a class="nav-link" href="visit.html">Visit</a>
 					</li>
-					<li class="nav-item mr-2">
+					<li class="nav-item mr-2 active">
 						<a class="nav-link" href="#">Programs</a>
 					</li>
-					<li class="nav-item active ">
+					<li class="nav-item ">
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<!--END NAVBAR-->
 	</header>
 
 	<main role="main" class="content">
+		<!--PROGRAM CONTENT-->
 		<section>
 			<h1 class="mb-5 text-center">Programs and Events</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-sm-4">
-						<img class="img-thumbnail mb-3" src="../images/program1-pexels.jpg" src="program image">
-						<h3 class="mb-2 text-center">Daily Tours</h3>
+					<div class="col-12 col-sm-4 mb-5 program">
+						<img class="img-thumbnail mb-3" src="../images/program1-pexels.jpg" alt="program image">
+						<h4 class="text-center">Daily Tours</h4>
 						<p>Take a 40 minute guided tour with of our indoor
 							reptile sanctuary. Meet our rescued snakes, lizards,
 							frogs and more. Learn about animal habitats and
 							take part in a feeding.
 						</p>
 					</div>
-					<div class="col-12 col-sm-4">
-						<img class="img-thumbnail mb-3" src="../images/program1-pexels.jpg" src="program image">
-						<h3 class="mb-2 text-center">Camps</h3>
+					<div class="col-12 col-sm-4 mb-5 program">
+						<img class="img-thumbnail mb-3" src="../images/program2-pexels.jpg" alt="program image">
+						<h4 class="mb-2 text-center">Camps</h4>
 						<p>Take a 40 minute guided tour with of our indoor
 							reptile sanctuary. Meet our rescued snakes, lizards,
 							frogs and more. Learn about animal habitats and
 							take part in a feeding.
 						</p>
 					</div>
-					<div class="col-12 col-sm-4">
-						<img class="img-thumbnail mb-3" src="../images/program1-pexels.jpg" src="program image">
-						<h3 class="mb-2 text-center">Birthday Parties</h3>
+					<div class="col-12 col-sm-4 mb-5 program">
+						<img class="img-thumbnail mb-3" src="../images/program3-pexels.jpg" alt="program image">
+						<h4 class="mb-2 text-center">Birthday Parties</h4>
 						<p>Take a 40 minute guided tour with of our indoor
 							reptile sanctuary. Meet our rescued snakes, lizards,
 							frogs and more. Learn about animal habitats and
@@ -119,45 +145,49 @@
 
 	<!--FOOTER-->
 	<footer class="footer darkgreen-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="row p-4">
-							<div class="col-12 col-md-3 pb-2">
-								<address>
-									Radical Reptiles<br>
-									4144 Jefferson Blvd<br>
-									Culver City, CA 90230<br>
-								</address>
-							</div>
-							<div class="col-12 col-md-6 pb-2">
-								<ul class="list-unstyled">
-									<li><a class="" href="#">FAQ</a></li>
-									<li><a class="" href="#">Volunteer/Career</a></li>
-									<li><a class="" href="#">Contact</a></li>
-								</ul>
-							</div>
-							<div class="col-12 col-md-3 pb-2">
-								<h6>See What's Happening</h6>
-								<ul class="list-unstyled list-inline">
-									<li class="list-inline-item">
-										<a href="#">
-											<i class="fab fa-facebook fa-lg"></i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a href="#">
-											<i class="fab fa-instagram fa-lg"></i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a href="#">
-											<i class="fab fa-youtube fa-lg"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-		</footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 px-0">
+					<div class="row p-4">
+						<div class="col-12 col-md-3 pb-2">
+							<address>
+								Radical Reptiles<br>
+								4144 Jefferson Blvd<br>
+								Culver City, CA 90230<br>
+							</address>
+						</div>
+						<div class="col-12 col-md-6 pb-2">
+							<ul class="list-unstyled">
+								<li><a class="" href="#">FAQ</a></li>
+								<li><a class="" href="#">Volunteer/Career</a></li>
+								<li><a class="" href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-md-3 pb-2">
+							<h6>See What's Happening</h6>
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-facebook fa-lg"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-instagram fa-lg"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-youtube fa-lg"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<!-- Optional JavaScript -->
@@ -175,12 +205,36 @@
 
 	<!-- Custom JS -->
 	<script src="../js/script.js"></script>
+
 	<!--MODAL SCRIPT-->
 	<script>
 		$(document).ready(function () {
-			$("#myModal").modal('show');
-		});
+			setTimeout(function () {
+				$('#subscribeModal').modal('show');
+			}, 2000);
+		}); //open modal
+
+		$('input').blur(function () {
+			if ($(this).val() !== "") {
+				var form = $(this).parents('form');
+				console.log($("[type=submit]"));
+				$("[type=submit]").removeClass('disabled').removeAttr('disabled').data('dismiss', 'modal');
+			}
+		})
+
+		$('.modal form').submit(function (e) {
+			e.preventDefault();
+		}) //prevent submit
+
+		$('#subscribeSubmit').click(function () {
+			if ($('#emailEntry').is(':valid')) {
+				$('#subscribeModal').modal('hide');
+				alert("Successfully Subscribed!");
+			}
+		});//close if valid entry
 	</script>
+
+
 
 </body>
 

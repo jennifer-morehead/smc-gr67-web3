@@ -86,10 +86,15 @@ footer {
   flex-shrink: 0;
 }
 
-  footer h6, footer a, footer address {
-    color: #f9f7f4;
+footer h6, footer a, footer address {
+  color: #f9f7f4;
 
-  }
+}
+
+footer a:hover {
+	color: #F78D20;
+	text-decoration: none;
+}
 
 nav a {
     font-weight: 700;
@@ -106,6 +111,12 @@ p {
 
 .active a {
   color:#F78D20;
+}
+
+#donateAmount .active button{
+	color: white;
+	background-color: #F78D20;
+	opacity: .8;
 }
 
 .alert-primary {
@@ -125,15 +136,25 @@ p {
   text-decoration: none;
 }
 
+.btn-outline-secondary {
+	color: #3E3E40;
+	border-color: #ced4da;
+	padding: 2px 4px;
+}
+
 .btn-primary {
-  background-color: #F2B705;
+  background-color: #F78D20;
   border: none;
   border-radius: 25px;
 }
   
   .btn-primary:hover {
-    background-color: #f2ab05;
+    background-color: #DF801E;
   }
+
+  .btn-primary:not(:disabled):not(.disabled):active {
+  		background-color: #DF801E;
+  	}
 
 .card {
 	border:none;
@@ -167,7 +188,32 @@ p {
   flex: 1 0 auto;
 }
 
+.donateAmount .active {
+	background-color: red;
+}
+
+
+.form-check {
+	color: black;
+}
+
+/*styling for invalid entry*/
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none;
+  border-width: 2px;
+}
+
+/*styling for valid entry*/
+.form-control.isvalid, .was-validated .form-control:valid {
+  
+}
+
+.invalid-feedback {
+	color: #665858;
+}
+
 .img-thumbnail {
+	padding: 0;
 	border: none;
 	border-radius: 0;
 }
@@ -201,6 +247,7 @@ Using max-width also is not behaving as expected*/
   }
 
 
+
 .navbar {
 	background-color: white;
 }
@@ -223,6 +270,29 @@ Using max-width also is not behaving as expected*/
 
 	.profile h6 {
 		letter-spacing: 1px;
+	}
+
+	@media (max-width: 575.98px) {
+		.profile h5 {
+			font-size: 1.75rem;
+		}
+
+		.profile h6 {
+			font-size: 1.25rem;
+		}
+	}
+
+.program {
+	padding: 0 30px;
+}
+	.program h4 {
+		color:  #658025;
+	}
+
+	@media (max-width: 575.98px) {
+		.program h4 {
+			font-size: 2rem;
+		}
 	}
 
 #upcoming h5 {

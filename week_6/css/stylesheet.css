@@ -94,7 +94,7 @@ input[type=text] {
   border-width: 2px;
 }
 
-/*remove green check, update boder color*/
+/*remove green check, update border color*/
 .form-control.isvalid, .was-validated .form-control:valid {
   background-image: none;
   border-color: #ced4da;
