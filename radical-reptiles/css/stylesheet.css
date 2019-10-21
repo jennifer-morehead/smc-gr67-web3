@@ -67,6 +67,8 @@ h5 {
 address {
   font-family: 'Lato',sans-serif;
   font-size: 16px;
+  margin-bottom: 0;
+
 }
 
 body {
@@ -86,9 +88,10 @@ footer {
   flex-shrink: 0;
 }
 
-footer h6, footer a, footer address {
+footer a, footer h6, footer p, footer address{
   color: #f9f7f4;
-
+  line-height: 1.5;
+/*  letter-spacing: .5px;*/
 }
 
 footer a:hover {
@@ -96,7 +99,16 @@ footer a:hover {
 	text-decoration: none;
 }
 
+footer p {
+  font-family: Lato, 'sans-serif';
+  margin-bottom: 0;
+}
+label {
+	color: #3E3E40;
+}
+
 nav a {
+    color: gray;
     font-weight: 700;
 }
 
@@ -183,6 +195,7 @@ p {
   		}
   }
 
+
 /*FOR STICKY FOOTER*/
 .content {
   flex: 1 0 auto;
@@ -201,7 +214,6 @@ font-weight: 700;
   color: white;
   padding: 10px 2px;
 
-  
 }
 
 .form-check {
@@ -258,11 +270,10 @@ Using max-width also is not behaving as expected*/
     }
   }
 
-
-
 .navbar {
 	background-color: white;
 }
+
 /*Logo Size*/
 .navbar-brand {
   font-family: 'Lora', serif;
@@ -274,6 +285,33 @@ Using max-width also is not behaving as expected*/
 
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
+  }
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #F78D20;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 2px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 80%;
+}
+
+  @media (max-width: 991.98px) {
+    .nav-link-ltr:hover::before {
+    width: 0%;
+    }
   }
 
 .profile {
@@ -300,6 +338,11 @@ Using max-width also is not behaving as expected*/
 	.program h4 {
 		color:  #658025;
 	}
+
+  .program a:hover {
+    text-decoration: none;
+    color: #F78D20;
+  }
 
 	@media (max-width: 575.98px) {
 		.program h4 {

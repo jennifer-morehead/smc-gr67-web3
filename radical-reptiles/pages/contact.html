@@ -27,12 +27,12 @@
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
 
-	<title>Jennifer Morehead | Web 3 | Week7 Midterm</title>
+	<title>Jennifer Morehead | Web 3 | Radical Reptiles Contact</title>
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg shadow-sm">
+		<nav class="navbar navbar-expand-lg shadow-sm mb-5">
 			<a class="navbar-brand orange" href="../index.html">Radical <span class="darkgreen">Reptiles</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,77 +45,66 @@
 						<a class="nav-link nav-link-ltr" href="../index.html">Home<span
 								class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item mr-2">
+					<li class="nav-item active mr-2">
 						<a class="nav-link nav-link-ltr" href="visit.html">Visit</a>
 					</li>
 					<li class="nav-item mr-2">
 						<a class="nav-link nav-link-ltr" href="programs.html">Programs</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link nav-link-ltr" href="#">About</a>
+					<li class="nav-item">
+						<a class="nav-link nav-link-ltr" href="about.html">About</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!--END NAVBAR-->
-
 	</header>
 
-	<main role="main" class="content">
+	<main role="main" class="content mb-5">
+		<section>
+			<form action="" method="get" name="contact" class="needs-validation px-5" id="contactForm" novalidate>
+				<div class="container " id="contactForm">
+					<div class="form-row justify-content-center">
+						<div class="col-12 col-md-8 mb-5 text-center">
+							<i class="fas fa-envelope-open-text fa-3x darkgreen p-1"></i>
+							<h1 class="p-1">Drop Us A Line</h1>
+							<p class="px-5">Ask us about camps, birthday parties, volunteering or any other general
+								inquiries.</p>
+						</div>
+					</div>
+					<div class="form-row justify-content-center">
+						<div class="form-group col-12 col-md-4">
+							<input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+							<div class="invalid-feedback">
+								Please enter your first name.
+							</div>
+						</div>
+						<div class="form-group col-12 col-md-4">
+							<input type="text" class="form-control" id="lastName" placeholder="LastName" required>
+							<div class="invalid-feedback">
+								Please enter your last name.
+							</div>
+						</div>
+					</div>
+					<div class="form-row justify-content-center">
 
-		<!-- <div class="jumbotron jumbotron-fluid text-center mb-5">
-			<h1 class="">Together,<br> we can make a difference</h1>
-		</div> -->
-		<div class="jumbotron jumbotron-fluid text-center p-0 mb-5">
-			<img class="img-fluid" src="../images/frogs-pexels.jpg" alt="hero-image">
-			<h2 class="mb-0">Together we can make a difference</h2>
-		</div>
+						<div class="form-group col-12 col-md-8">
+							<textarea class="form-control" id="contactMessage" rows="3"
+								placeholder="Write Us A Message" required></textarea>
+							<div class="invalid-feedback">
+								Oops! Don't forget your message!
+							</div>
+						</div>
+						<div class="form-group col-12 col-md-8 text-right">
+							<button type="submit" class="btn btn-primary text-right" id="contactSubmit">Submit</button>
 
-		<!--ABOUT-->
-		<section class="mb-5">
-			<div class="container">
-				<h1 class="mb-5 text-center">Our Purpose</h1>
-				<div class="row justify-content-center">
-					<div class="col-10">
-						<article>
-							<p>It is a Wildlife sanctuary of Bargarh district, Odisha, covering
-								a total area of 353 sq.km. It is situated near HirakudDam.
-								Debrigarh Wildlife Sanctuary is an important site for insitu
-								conservation of wildlife and its habitat in the state of Odisha.
-								It is the home to an immense array of biodiversity, over 40
-								species of mammals, 234 species of birds, 41 species of reptiles,
-								12 species of amphibians, 42 species of fishes, 39 species of
-								odonates, 85 species of butterflies and 38 species of spiders.
-							</p>
-						</article>
+						</div>
+
 					</div>
 				</div>
-			</div>
+			</form>
 		</section>
 
-		<!--TEAM-->
-		<section class="">
-			<div class="container">
-				<h1 class="mb-5 text-center">Our People</h1>
-				<div class="row">
-					<div class="col-12 col-sm-4 text-center mb-5 profile ">
-						<img class="img-thumbnail mb-3" src="../images/team1-pexels.jpg" alt="team headshot">
-						<h5 class="mb-1">Margaret Wilson</h5>
-						<h6 class="text-muted">Program Director</h6>
-					</div>
-					<div class="col-12 col-sm-4 text-center mb-5 profile">
-						<img class="img-thumbnail mb-3" src="../images/team2-pexels.jpg" alt="team headshot">
-						<h5 class="mb-1">Ben Schneider</h5>
-						<h6 class="text-muted">Volunteer Coordinator</h6>
-					</div>
-					<div class="col-12 col-sm-4 text-center mb-5 profile">
-						<img class="img-thumbnail mb-3" src="../images/team3-pexels.jpg" alt="team headshot">
-						<h5 class="mb-1">Ann Morgan</h5>
-						<h6 class="text-muted">Accounts Manager</h6>
-					</div>
-				</div>
-			</div>
-		</section>
 	</main>
 
 	<!--FOOTER-->
@@ -137,10 +126,10 @@
 							<a class="" href="contact.html">&nbsp;&nbsp;Message Us</a>
 
 							<!-- <ul class="list-unstyled">
-										<li><a class="" href="#">FAQ</a></li>
-										<li><a class="" href="#">Volunteer/Career</a></li>
-										<li><a class="" href="#">Contact</a></li>
-									</ul> -->
+								<li><a class="" href="#">FAQ</a></li>
+								<li><a class="" href="#">Volunteer/Career</a></li>
+								<li><a class="" href="#">Contact</a></li>
+							</ul> -->
 						</div>
 						<div class="col-12 col-md-3 mb-3">
 							<h6>See What's Happening</h6>
@@ -184,6 +173,16 @@
 
 	<!-- Custom JS -->
 	<script src="../js/script.js"></script>
+
+	<!-- FORM JS -->
+	<script>
+	$('#contactSubmit').click(function () {
+			if ($('#contactForm').is(':valid')) {
+				alert("Message Sent!");
+			}
+		});//Message Confirmation
+	
+	</script>
 
 </body>
 

@@ -88,16 +88,17 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item mr-2">
-						<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+						<a class="nav-link nav-link-ltr" href="../index.html">Home<span
+								class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item mr-2">
-						<a class="nav-link" href="visit.html">Visit</a>
+						<a class="nav-link nav-link-ltr" href="visit.html">Visit</a>
 					</li>
 					<li class="nav-item mr-2 active">
-						<a class="nav-link" href="#">Programs</a>
+						<a class="nav-link nav-link-ltr" href="#">Programs</a>
 					</li>
 					<li class="nav-item ">
-						<a class="nav-link" href="about.html">About</a>
+						<a class="nav-link nav-link-ltr" href="about.html">About</a>
 					</li>
 				</ul>
 			</div>
@@ -113,29 +114,29 @@
 					<div class="col-12 col-sm-4 mb-5 program">
 						<img class="img-thumbnail mb-3" src="../images/program1-pexels.jpg" alt="program image">
 						<h4 class="text-center">Daily Tours</h4>
-						<p>Take a 40 minute guided tour with of our indoor
+						<p>Take a 45 minute guided tour with of our indoor
 							reptile sanctuary. Meet our rescued snakes, lizards,
 							frogs and more. Learn about animal habitats and
-							take part in a feeding.
+							take part in a feeding. Tours start every hour.
 						</p>
+						<a class="text-right" href="contact.html">Questions?</a>
 					</div>
 					<div class="col-12 col-sm-4 mb-5 program">
 						<img class="img-thumbnail mb-3" src="../images/program2-pexels.jpg" alt="program image">
 						<h4 class="mb-2 text-center">Camps</h4>
-						<p>Take a 40 minute guided tour with of our indoor
-							reptile sanctuary. Meet our rescued snakes, lizards,
-							frogs and more. Learn about animal habitats and
-							take part in a feeding.
+						<p>Summer, Winter, and Spring break camps are available for campers age 5-12. Spend a week
+							learning about and caring for our amazing reptiles. Contact us for more information.
 						</p>
+						<a class="text-right" href="contact.html">Questions?</a>
 					</div>
 					<div class="col-12 col-sm-4 mb-5 program">
 						<img class="img-thumbnail mb-3" src="../images/program3-pexels.jpg" alt="program image">
 						<h4 class="mb-2 text-center">Birthday Parties</h4>
-						<p>Take a 40 minute guided tour with of our indoor
-							reptile sanctuary. Meet our rescued snakes, lizards,
-							frogs and more. Learn about animal habitats and
-							take part in a feeding.
+						<p>1.5 hour party packages available Saturdays and Sundays. Private animal meet and greet with
+							pizza and cake to follow. Birthday child gets a custom t-shirt and a monthly pass. Contact
+							us to reserve.
 						</p>
+						<a class="text-right" href="contact.html">Questions?</a>
 					</div>
 				</div>
 
@@ -149,21 +150,25 @@
 			<div class="row">
 				<div class="col-12 px-0">
 					<div class="row p-4">
-						<div class="col-12 col-md-3 pb-2">
+						<div class="col-12 col-md-3 mb-3">
 							<address>
 								Radical Reptiles<br>
 								4144 Jefferson Blvd<br>
 								Culver City, CA 90230<br>
 							</address>
 						</div>
-						<div class="col-12 col-md-6 pb-2">
-							<ul class="list-unstyled">
-								<li><a class="" href="#">FAQ</a></li>
-								<li><a class="" href="#">Volunteer/Career</a></li>
-								<li><a class="" href="#">Contact</a></li>
-							</ul>
+						<div class="col-12 col-md-6 mb-3">
+							<h6 class="m-0">CONTACT</h6>
+							<p>&nbsp;&nbsp;323 455-4455</p>
+							<a class="" href="contact.html">&nbsp;&nbsp;Message Us</a>
+
+							<!-- <ul class="list-unstyled">
+									<li><a class="" href="#">FAQ</a></li>
+									<li><a class="" href="#">Volunteer/Career</a></li>
+									<li><a class="" href="#">Contact</a></li>
+								</ul> -->
 						</div>
-						<div class="col-12 col-md-3 pb-2">
+						<div class="col-12 col-md-3 mb-3">
 							<h6>See What's Happening</h6>
 							<ul class="list-unstyled list-inline">
 								<li class="list-inline-item">
@@ -211,7 +216,7 @@
 		$(document).ready(function () {
 			setTimeout(function () {
 				$('#subscribeModal').modal('show');
-			}, 2000);
+			}, 3000);
 		}); //open modal
 
 		$('input').blur(function () {
@@ -231,7 +236,7 @@
 				$('#subscribeModal').modal('hide');
 				alert("Successfully Subscribed!");
 			}
-		});//close if valid entry
+		}); //close if valid entry
 	</script>
 
 

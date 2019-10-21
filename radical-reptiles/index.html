@@ -113,16 +113,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active mr-2">
-						<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+						<a class="nav-link nav-link-ltr" href="#">Home<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item mr-2">
-						<a class="nav-link" href="pages/visit.html">Visit</a>
+						<a class="nav-link nav-link-ltr" href="pages/visit.html">Visit</a>
 					</li>
 					<li class="nav-item mr-2">
-						<a class="nav-link" href="pages/programs.html">Programs</a>
+						<a class="nav-link nav-link-ltr" href="pages/programs.html">Programs</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="pages/about.html">About</a>
+						<a class="nav-link nav-link-ltr" href="pages/about.html">About</a>
 					</li>
 				</ul>
 			</div>
@@ -189,7 +189,7 @@
 				<h1 class="text-center mb-5">Upcoming Events</h1>
 
 				<div class="card-deck" id="upcoming">
-					<div class="col-12 col-md-4 mb-5 p-0">
+					<div class="col-12 col-md-4 mb-5 p-0 d-flex align-items-stretch">
 						<div class="card ">
 							<img src="images/upcoming1-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
@@ -199,14 +199,14 @@
 								</div>
 								<hr>
 								<h5 class="card-title">Snake Meet n'Greet</h5>
-								<p class="card-text">This is a longer card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text">Join us from 10 AM to 12 PM for a meet and greet with some of our
+									scaly friends. Suggested age, 4-10. No registration required.</p>
 								<!-- <a href="#" class="text-muted"><small>View Details</small></a> -->
 
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4 mb-5 p-0">
+					<div class="col-12 col-md-4 mb-5 p-0 d-flex align-items-stretch">
 						<div class="card">
 							<img src="images/upcoming2-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body ">
@@ -216,14 +216,14 @@
 								</div>
 								<hr>
 								<h5 class="card-title">Turtle Feeding</h5>
-								<p class="card-text">This is a longer card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text">Come on by to help feed our turtle friends from 11-11:30 AM. Stay
+									and learn all about turtles. Suggested age, 4-10. No registration required.</p>
 
 								<!-- <a href="#" class="text-muted"><small>View Details</small></a> -->
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4 mb-5 p-0">
+					<div class="col-12 col-md-4 mb-5 p-0 d-flex align-items-stretch">
 						<div class="card">
 							<img src="images/upcoming3-pexels.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
@@ -233,8 +233,8 @@
 								</div>
 								<hr>
 								<h5 class="card-title">Reptile Ecosystems</h5>
-								<p class="card-text">This is a longer card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text">Learn all about reptile ecosytems with Kenny, our volunteer reptile
+									caregiver. 10:30-11:30 AM. Suggested age, 4-10. No registration required.</p>
 
 								<!-- <a href="#" class="text-muted"><small>View Details</small></a> -->
 							</div>
@@ -251,21 +251,25 @@
 			<div class="row">
 				<div class="col-12 px-0">
 					<div class="row p-4">
-						<div class="col-12 col-md-3 pb-2">
+						<div class="col-12 col-md-3 mb-3">
 							<address>
 								Radical Reptiles<br>
 								4144 Jefferson Blvd<br>
 								Culver City, CA 90230<br>
 							</address>
 						</div>
-						<div class="col-12 col-md-6 pb-2">
-							<ul class="list-unstyled">
-								<li><a class="" href="#">FAQ</a></li>
-								<li><a class="" href="#">Volunteer/Career</a></li>
-								<li><a class="" href="#">Contact</a></li>
-							</ul>
+						<div class="col-12 col-md-6 mb-3" id="footerContact">
+							<h6 class="m-0">CONTACT</h6>
+							<p>&nbsp;&nbsp;323 455-4455</p>
+							<a class="" href="pages/contact.html">&nbsp;&nbsp;Message Us</a>
+
+							<!-- <ul class="list-unstyled">
+									<li><a class="" href="#">FAQ</a></li>
+									<li><a class="" href="#">Volunteer/Career</a></li>
+									<li><a class="" href="#">Contact</a></li>
+								</ul> -->
 						</div>
-						<div class="col-12 col-md-3 pb-2">
+						<div class="col-12 col-md-3 mb-3">
 							<h6>See What's Happening</h6>
 							<ul class="list-unstyled list-inline">
 								<li class="list-inline-item">
@@ -342,7 +346,7 @@
 
 		$('#donateSubmit').click(function () {
 			$('#donateModal').modal('hide');
-			alert("Thank You!");
+			alert("Thank You For Your Support!");
 		}); //close if valid entry
 	</script>
 
