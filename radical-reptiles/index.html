@@ -32,7 +32,6 @@
 </head>
 
 <body>
-
 	<!-- DONATE MODAL -->
 	<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModal"
 		aria-hidden="true">
@@ -103,6 +102,7 @@
 		</div>
 	</div>
 	<header>
+		<!--NAVBAR-->
 		<nav class="navbar navbar-expand-lg shadow-sm">
 			<a class="navbar-brand orange" href="index.html">Radical <span class="darkgreen">Reptiles</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -127,7 +127,6 @@
 				</ul>
 			</div>
 		</nav>
-		<!--END NAVBAR-->
 	</header>
 
 	<main role="main" class="content">
@@ -184,6 +183,15 @@
 					</div>
 				</div>
 			</div>
+
+			<!--ALERT-->
+			<div class="alert alert-dark alert-secondary fade show text-center" id="cookies" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+				For your best experience, this site uses cookies. By vising Radical Reptiles, you accept our use of cookies.
+			</div>
+
 			<!--CONTENT-->
 			<div class="container-fluid px-5">
 				<h1 class="text-center mb-5">Upcoming Events</h1>
@@ -348,6 +356,14 @@
 			$('#donateModal').modal('hide');
 			alert("Thank You For Your Support!");
 		}); //close if valid entry
+	</script>
+	<script>
+		$('#cookies').hide();
+		$(document).ready(function () {
+			setTimeout(function () {
+				$('#cookies').show();
+			}, 3000);
+		}); //open modal
 	</script>
 
 </body>

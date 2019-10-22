@@ -201,6 +201,14 @@ p {
   flex: 1 0 auto;
 }
 
+#cookies {
+  border-radius: 0;
+  border: none;
+  background-color: #B2D235;
+  opacity: .8;
+
+}
+
 /*styling for valid entry donate modal*/
 #donateAmount .form-control.isvalid, .was-validated .form-control:valid {
   background-image: none;
