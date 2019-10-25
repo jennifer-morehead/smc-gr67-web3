@@ -76,16 +76,14 @@
 									</div>
 								</div>
 								<div class="form-group col-12 text-center">
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="checkbox" id="monthlyAmount"
-											value="option1" checked>
-										<label class="form-check-label" for="inlineCheckbox1">monthly</label>
-									</div>
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="checkbox" id="oneTimeAmount"
-											value="option2">
-										<label class="form-check-label" for="inlineCheckbox2">one-time donation</label>
-									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="monthlyAmount" name="monthlyAmount" class="custom-control-input" checked>
+										<label class="custom-control-label" for="monthlyAmount">monthly</label>
+									  </div>
+									  <div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="oneTimeAmount" name="oneTimeAmount" class="custom-control-input">
+										<label class="custom-control-label" for="oneTimeAmount">one time donation</label>
+									  </div>
 								</div>
 
 
@@ -320,23 +318,36 @@
 	<!-- Custom JS -->
 	<script src="js/script.js"></script>
 	<script>
+		$(document).ready(function() {
+		console.log('working');
 		$('#donateAmount button').click(function () {
-			$('#donateAmount button').removeClass('active');
-			$(this).addClass('active');
+
+			$('#donateAmount button').removeClass('active');//remove all active button
+			$('#customAmount').val('');//remove custom amount			
+			$(this).addClass('active');//add activ to selected button
 			$('#donateAmount #customAmount').removeAttr('required');
-		}); //highlight selected fixed amount and remove validation from custom amount
+		}); //end donate amount click
 
-		$('#donateAmount #customAmount').focus(function () {
-			$('#donateAmount button').removeClass('active');
-		}) //remove button amount highlight
+		$('#customAmount').focus(function() {
+			$('#donateAmount button').removeClass('active');			
+		})
 
-		$('#donateAmount #oneTimeAmount').focus(function () {
-			$('#donateAmount #monthlyAmount').removeAttr('checked');
-		}) //toggle monthly/one-time
+		$('#oneTimeAmount').click(function() {
+			console.log('one time clicked');
+			$('this').prop('checked',true);
+			$('#monthlyAmount').prop('checked',false);
+		});//toggle one time amount
 
-		$('#donateAmount #monthlyAmount').focus(function () {
-			$('#donateAmount #oneTimeAmount').removeAttr('checked');
-		}) //toggle monthly/one-time
+		$('#monthlyAmount').click(function() {
+			console.log('monthly clicked');
+			$(this).prop('checked',true);
+			$('#oneTimeAmount').prop('checked',false);
+		});//toggle one time amount
+
+		
+		});
+
+		
 	</script>
 
 	<script>
