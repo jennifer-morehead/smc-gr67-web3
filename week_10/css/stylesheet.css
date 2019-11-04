@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+/* Color Theme Swatches in Hex */
+.eggplant { color: #665858; }
+.eggplant-bg { background-color: #665858; }
+.natural-bg {background-color: #f7f2f2; }
+.soft-pink { color: #EAD2D2; }
+.soft-pink-bg { background-color: #EAD2D2; }
+.pink { color: #E6C5C5; }
+.brown { color: #524E4E; }
+.mauve { color: #B39A9A; }
+.mygray { color: #665858;}
+
+
+/*///OVERRIDE BOOTSTRAP//*/
+
+p {
+	font-family: 'Merriweather', serif;
+	color: #37403E;
+}
+
+body {
+	color: #665858;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #665858;
+}
+
+h5 {
+	font-weight: 600;
+}
+
+article p {
+	line-height: 2;
+}
+
+
+
+.field {
+	min-height: 400px;
+	background-color: whitesmoke;
+	position: relative;
+	padding: 0px;
+
+}
+
+.box {
+	width: 120px;
+	height: 120px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.boxHolder {
+	position: relative;
+	height: 400px;
+
+	animation: boxHolder .8s 2s ease-out forwards;
+}
+
+.box1 {
+	width: 80px;
+	height: 40px;
+	background-color: lightgray;
+	position: absolute;
+	top: calc(50% + 20px);
+	left: 0px;
+	opacity: 0;
+	animation: boxOne 2.5s 1s ease-out forwards;
+}
+.box2 {
+	width: 40px;
+	height: 120px;
+	background-color: darkgray;
+	position: absolute;
+	top: calc(100% - 120px);
+	left: calc(50% + 20px);
+	opacity: 0;
+	animation: boxTwo 2.5s 1s ease-out forwards;
+}
+
+
+.box3 {
+	width: 80px;
+	height: 80px;
+	background-color: gray;
+	position: absolute;
+	top: 0px;
+	left: calc(50% - 60px);
+	opacity: 0;
+	animation: boxThree 2.5s 1s ease-out forwards;
+}
+
+@keyframes boxHolder {
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+
+}
+
+
+@keyframes boxOne {
+		0% {
+			opacity: 0;
+			left: 0px;
+		}	
+		25% {
+			opacity: 1;
+			left: calc(50% - 60px);
+		}
+		75% {
+			opacity: 1;
+			left: calc(50% - 60px);
+		}
+		100% {
+			opacity: 0;
+			left: 0px;
+		}
+	}
+
+@keyframes boxTwo {
+		0% {
+			opacity: 0;
+			top: calc(100% - 120px);
+		}
+		25% {
+			opacity: 1;
+			top: calc(50% - 60px);
+		}
+		75% {
+			opacity: 1;
+			top: calc(50% - 60px);
+		}
+		100% {
+			opacity: 0;
+			top: calc(100% - 120px);
+		}
+	}
+
+@keyframes boxThree {
+		0% {
+			opacity: 0;
+			top: 0px;
+		}	
+		25% {
+			opacity: 1;
+			top: calc(50% - 60px);
+		}
+		75% {
+			opacity: 1;
+			top: calc(50% - 60px);
+		}
+		100% {
+			opacity: 0;
+			top: 0px;
+		}
+	}
+
+
+
