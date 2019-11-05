@@ -66,11 +66,16 @@ article p {
 	transform: translate(-50%, -50%);
 }
 
+.animation-run {
+	animation-play-state: running !important;
+}
+
 .boxHolder {
 	position: relative;
 	height: 400px;
 
 	animation: boxHolder .8s 2s ease-out forwards;
+	animation-play-state: paused;
 }
 
 .box1 {
@@ -82,6 +87,7 @@ article p {
 	left: 0px;
 	opacity: 0;
 	animation: boxOne 2.5s 1s ease-out forwards;
+	animation-play-state: paused;
 }
 .box2 {
 	width: 40px;
@@ -91,7 +97,7 @@ article p {
 	top: calc(100% - 120px);
 	left: calc(50% + 20px);
 	opacity: 0;
-	animation: boxTwo 2.5s 1s ease-out forwards;
+	animation: boxTwo 2.5s 1s ease-out forwards;animation-play-state: paused;
 }
 
 
@@ -104,6 +110,7 @@ article p {
 	left: calc(50% - 60px);
 	opacity: 0;
 	animation: boxThree 2.5s 1s ease-out forwards;
+	animation-play-state: paused;
 }
 
 @keyframes boxHolder {

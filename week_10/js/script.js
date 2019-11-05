@@ -18,4 +18,18 @@ $(document).ready(function() {
 		keyboard: false
 	})
 
+	$('#play').click(function(){
+		// if($(this).data('anim') === 'running'){
+		// 	$('[class^="box"]').css('animation-play-state', 'paused');
+		// 	$(this).data('anim','paused');
+		// }
+		// else {
+		// 	$('[class^="box"]').css('animation-play-state', 'running');
+		// 	$(this).data('anim','running');
+		// }
+
+		$('[class^="box"]').toggleClass('animation-run');
+	})
+	
+
 })
