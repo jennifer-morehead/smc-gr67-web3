@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+body {
+	background-color: lightgray;
+}
+
+canvas {
+	background-color:rgba(255, 224, 57, 1);
+}
+
