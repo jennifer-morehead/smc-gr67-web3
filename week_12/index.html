@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!--   __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+-->
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900|Montserrat:400,600,800&display=swap"
+		rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+	<title>Jennifer Morehead | Web 3 | Week 12</title>
+</head>
+
+<body>
+
+	<main>
+
+
+		<div class="container mt-5">
+
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<canvas id="game" width="700" height="400"></canvas>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<h3>Click Counter</h3>
+					<h6 id="clicksNum">00</h6>
+				</div>
+			</div> 
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-3 text-center">
+						<button type="button" id="blueBall" class="btn btn-secondary w-100 py-2 my-2">Blue</button>
+				</div>
+				<div class="col-12 col-sm-3 text-center">
+						<button type="button" id="orangeBall" class="btn btn-secondary w-100 py-2 my-2">Orange</button>
+				</div>
+				
+				<div class="col-12 col-sm-3 text-center">
+						<button type="button" id="bigBall" class="btn btn-secondary w-100 py-2 my-2">Big</button>
+				</div>
+				<div class="col-12 col-sm-3 text-center">
+						<button type="button" id="smallBall" class="btn btn-secondary w-100 py-2 my-2">Small</button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+					<div class="col-12 col-sm-3 text-center">
+							<button type="button" id="reset" class="btn btn-primary w-100 py-2 my-2">Reset</button>
+					</div>
+
+			</div>
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+	<script>
+		var blueBtn = document.getElementById('blueBall');
+		var orangeBtn = document.getElementById('orangeBall');
+		var bigBtn = document.getElementById('bigBall');
+		var smallBtn = document.getElementById('smallBall');
+		var resetBtn = document.getElementById('reset');
+		var clicks = document.getElementById('clicksNum');
+		var count = 0;
+		blueBtn.addEventListener("click", function (event) {
+			count += 1;
+			clicks.innerHTML = count;
+			ballColor = 'rgb(0,128,255)';
+		});
+
+		orangeBtn.addEventListener("click", function (event) {
+			count += 1;
+			clicks.innerHTML = count;
+			ballColor = 'rgb(255,128,0)';
+		});
+
+		bigBtn.addEventListener("click", function (event) {
+			count += 1;
+			clicks.innerHTML = count;
+			ballRadius = 100;
+		});
+
+		smallBtn.addEventListener("click", function (event) {
+			count += 1;
+			clicks.innerHTML = count;
+			ballRadius = 5;
+		});
+
+		resetBtn.addEventListener("click", function (event) {
+			count = 0;
+			clicks.innerHTML = count;
+			ballRadius = 50;
+			ballColor = 'rgb(0,0,0)';
+		});
+
+
+		
+	</script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- popper relies on jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

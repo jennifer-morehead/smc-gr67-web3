@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+body {
+  background-color:black;
+  color: white;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  /* background-color: pink; */
+  z-index: 0;
+
+}
+
