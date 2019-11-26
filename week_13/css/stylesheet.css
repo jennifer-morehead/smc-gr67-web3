@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+/*///COLORS///*/
+
+body {
+	background-color: rgba(116,164,161,.3);
+}
+
+picture img {
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 7vw;
+  padding: 2vw 2vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  background-color: rgba(255,255,255,.3);
+}
+
+
