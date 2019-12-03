@@ -175,14 +175,13 @@ p {
 	border-radius: 0;
 }
 
-.carousel-item h2 {
+.carousel-item h3 {
     position: absolute;
     top: 10%;
     left: 5%;
-    font-family: 'Lora';
     font-size: 3rem;/*48px*/
     font-weight: 700;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     line-height: 120%;
     color: white;
   }
