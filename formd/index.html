@@ -162,7 +162,11 @@
 
   <!--FOOTER-->
   <footer>
-        <img class="footer-bg" src="images/footer.png" alt="geometric shape">
+        <picture class="footer-bg">
+                <source media="(min-width: 540px)" srcset="images/footer.png">
+                <img src="images/footer-540.png" alt="footer bkgd">
+            </picture>
+        <!-- <img class="footer-bg" src="images/footer.png" alt="geometric shape"> -->
         <h2>"</h2>
         <div class="container footer-content">
             <div class="row">
@@ -210,17 +214,6 @@
             pause: "hover",
         })
     </script>
-
-    <script>
-        // var addItem = document.getElementById('addBtn');
-        // var items = document.getElementById('cartItems');
-        // var count = 0;
-        // addItem.addEventListener("click", function (event) {
-        // 	count += 1;
-        // 	cartItems.innerHTML = count;
-        // });
-    </script>
-
 
     <!--KONVA JS STAGE-->
     <script>

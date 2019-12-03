@@ -206,6 +206,10 @@
 
     <!--FOOTER-->
     <footer>
+        <!-- <picture class="footer-bg">
+            <source media="(min-width: 576px)" srcset="../images/footer.png">
+            <img src="../images/footer-mobile.png" alt="footer bkgd">
+        </picture> -->
         <img class="footer-bg" src="../images/footer.png" alt="geometric shape">
         <h2>"</h2>
         <div class="container footer-content">
@@ -232,6 +236,7 @@
             </div>
         </div>
 
+        <!--ANIMATE TESTS-->
         <!-- <svg id="footerArt" viewBox="0 0 1200 600">
             <g stroke="black" stroke-width="1" fill="none">
                 <path d="M3.5,563.5h1121v-197h-805s24,122,143,122,140-157,140-157h-488v188" />
@@ -239,11 +244,12 @@
             </g>
         </svg> -->
 
-        <svg id="footerArt" viewBox="0 0 1200 600">
-                <g stroke="black" stroke-width="2" fill="none">
-                <path d="M35.5,62.5l146,83h455s46-86,163-86,164,86,164,86h200V436.65h-904a32,32,0,0,1-32-32V393.5a32,32,0,0,1,32-32H1061v-78l-10.5,22" />
-                </g>
-                </svg>
+        <!-- <svg id="footerArt" viewBox="0 0 1200 600">
+            <g stroke="black" stroke-width="2" fill="none">
+                <path
+                    d="M35.5,62.5l146,83h455s46-86,163-86,164,86,164,86h200V436.65h-904a32,32,0,0,1-32-32V393.5a32,32,0,0,1,32-32H1061v-78l-10.5,22" />
+            </g>
+        </svg> -->
 
 
     </footer>
@@ -261,8 +267,6 @@
     </script>
 
 
-
-
     <!-- Custom JS -->
 
     <!-- carousel -->
@@ -275,7 +279,7 @@
 
 
 
-    <!-- add to cart -->
+    <!-- Add to Cart -->
     <script>
         var size = document.getElementById("selectSize");
         var quantity = document.getElementById("selectQuantity")
@@ -296,6 +300,8 @@
         });
     </script>
 
+
+    <!--Polyline converter-->
     <script>
         var polys = document.querySelectorAll('polygon,polyline');
         [].forEach.call(polys, convertPolyToPath);
@@ -313,16 +319,11 @@
         }
     </script>
 
+    <!--Draw SVG Function-->
     <script>
         var fSVG = $('#footerArt').drawsvg();
         fSVG.drawsvg('animate');
     </script>
-
-
-
-
-
-
 
 </body>
 
