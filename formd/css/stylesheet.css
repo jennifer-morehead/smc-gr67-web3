@@ -205,6 +205,21 @@ footer h2 {
   color: #345beb;
   font-weight: bold;
 }
+
+main:before {
+  content: "";
+  display: block;
+  height: 88px;
+}
+
+@media (min-width: 576px) {
+  main:before {
+    height: 124px;
+  }
+}
+
+
+
 .navbar {
 	background-color: whitesmoke;
 }

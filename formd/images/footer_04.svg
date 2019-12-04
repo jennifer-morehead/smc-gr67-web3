@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-4 {
+        fill: #bb9d8e;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-6 {
+        fill: #565656;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="-12" y="-710" width="1200" height="600"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" x="-12.11" y="-1144.49" width="1599.11" height="1096.53"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect class="cls-1" width="1200" height="600"/>
+    </clipPath>
+  </defs>
+  <title>footer</title>
+  <g id="_01" data-name="01">
+    <g class="cls-2">
+      <g class="cls-3">
+        <ellipse class="cls-4" cx="-9.69" cy="-48.38" rx="864.22" ry="867.25"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <g class="cls-5">
+      <path class="cls-6" d="M981,109.25a233,233,0,0,0-361.94,0H191L0,0V900H1200V109.25Z"/>
+    </g>
+  </g>
+</svg>
