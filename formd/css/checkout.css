@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*	     __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+*/
+
+
+/*////////////STYLING FOR TOGGLE////////////////*/
+/*checked, unvalidated*/
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #bb9d8e;
+    background-color: #e0bba7;
+}
+
+/*checked, validated*/
+.custom-control-input.is-valid:checked~.custom-control-label::before, .was-validated .custom-control-input:valid:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #bb9d8e;
+    background-color: #e0bba7;
+}
+
+/*unchecked, validated*/
+.custom-control-input.is-valid~.custom-control-label::before, .was-validated .custom-control-input:valid~.custom-control-label::before {
+    border-color: #bb9d8e !important;
+}
+
+/*////////////STYLING FOR INPUTS////////////////*/
+/* remove red x, update border color*/
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none;
+  border-color: #bb9d8e;
+  border-width: 2px;
+}
+
+/*remove green check, update border color*/
+.form-control.isvalid, .was-validated .form-control:valid {
+  background-image: none;
+  border-color: #e0bba7;
+}
+
+/*////////////STYLING FOR RADIO BUTTON////////////////*/
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+    color: #414141;
+}
+
+.invalid-feedback {
+	color: #bb9d8e;
+}
+
+/*custom invalid response per input type*/
+.invalid-input {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+}
+
+
+
+

@@ -23,7 +23,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
 
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
@@ -44,26 +44,29 @@
     <header>
         <!--NAVBAR-->
         <nav class="navbar fixed-top navbar-expand-md shadow-sm">
-            <a class="navbar-brand p-0" href="#">form<span class="pink">D.</span></a>
+            <a class="navbar-brand p-0" href="#">form<span class="pink">D</span></a>
 
             <!--NAV-->
             <div class="collapse navbar-collapse" id="navbarMain">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="pages/products.html">Shop</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="pages/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
                     </li>
             </div>
 
             <!--CART-->
             <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span id="cartItems"
-                        class="pl-1">0</span></a>
+                <a class="nav-link" href="pages/cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <!-- <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>shop-bag-09</title><g id="Layer_5" data-name="Layer 5"><path d="M23,9V23H1V9H23m1-1H0V24H24V8Z"/><path class="cls-1" d="M5,8.5A6.76,6.76,0,0,1,12,2a6.76,6.76,0,0,1,7,6.5"/></g></svg> -->
+                    <span id="cartItems"class="pl-1">0</span>
+                </a>
             </div>
 
             <!--TOGGLER-->
@@ -90,13 +93,11 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active text-center">
                         <img src="images/carousel_01a.jpg" class="d-block w-100" alt="...">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1 class="pb-3">Curated Art for Every Budget</h1>
-                                <p><a class="carousel-btn" href="#" role="button">SHOP NOW</a></p>
-                            </div>
+                        <div class="carousel-overlay">
+                            <h1 class="">Curated Art for Every Budget</h1>
+                            <a class="btn-custom" href="pages/shop.html" role="button">SHOP NOW</a>
                         </div>
                     </div>
                     <div class="carousel-item relative">
@@ -121,51 +122,42 @@
             </div>
         </section>
 
-        <!--NEW ARRIVALS 1-->
-        <div class="container gallery1 relative mb-5">
+        <!--HOME GALLERY-->
+        <div class="container home-gallery mb-5">
             <!-- <h1 class="rotate-text orange-bg">NEW ARRIVALS</h1> -->
-            <div class="row">
+            <div class="row mb-2">
                 <div class="col-12 col-sm-8 d-flex flex-column">
-                    <img class="w-100 mb-2" src="images/la213-1120.jpg" alt="art image">
-                    <h2 class="teal-bg p-2">Independent Artists</h2>
+                    <img class="w-100 mb-2" src="images/la213-576x750.jpg" alt="art image">
+                    <h2 class="p-2"><span class="pink">Free</span> Returns</h2>
                 </div>
                 <div class="col-12 col-sm-4 d-flex flex-column">
-                    <img class="w-100 mb-2" src="images/offthegrid04-640.jpg" alt="art image">
-                    <h2 class="mb-auto pink-bg p-2">Limited Editions</h2>
+                    <img class="w-100 mb-2" src="images/offGrid04-576x576.jpg" alt="art image">
+                    <h2 class="mb-auto p-2"><span class="h2-tint">Archival</span>Quality</h2>
 
-                    <img class="w-100" src="images/redsun-640.jpg" alt="art image">
+                    <img class="w-100" src="images/redSun-576x750.jpg" alt="art image">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-4 d-flex flex-column">
+                    <img class="w-100 mt-auto mb-2" src="images/desertPalm-576x750.jpg" alt="art image">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <img class="w-100 mb-2" src="images/shuffleD-750x576.jpg" alt="art image">
                 </div>
             </div>
         </div>
 
-        <!--NEW ARRIVALS 2-->
-        <!-- <div class="container home-gallery mb-5">
-            
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-7 d-flex flex-column justify-content-between">
-                    <img class="w-100" src="images/la213.jpg" alt="art thumb">
-                    <h1 class="pink align-right">Large Scale Art</h1>
-                </div>
-
-                <div class="col-12 col-sm-5 d-flex flex-column justify-content-between">
-                    <h1 class="aqua align-left">Original art by local artists</h1>
-                    <img class="w-100" src="images/redsun.jpg" alt="art thumb">
-                </div>
-
-            </div>
-
-        </div> -->
-
-        <!--NEW ARRIVALS 3-->
-        <div class="container mb-5">
-            <h1 class="text-center mb-3">New Arrivals</h1>
+        <!--NEW ARRIVALS-->
+        <div class="subsection container">
+            <h3 class="text-center mb-3">New Arrivals</h3>
             <div class="row">
                 <!--PRODUCT THUMB-->
                 <div class="col-12 col-sm-4 text-center mb-5 product-thumb">
                     <a href="pages/item.html">
                         <div>
-                            <img class="img-thumbnail mb-3" src="images/offthegrid04-thumb.jpg" alt="art thumb">
-                            <h5 class="mb-1">Off the Grid 04</h5>
+                            <img class="img-thumbnail mb-3" src="images/offGrid03b-576x576.jpg" alt="art thumb">
+                            <h5 class="mb-1">Off the Grid 03</h5>
                             <h6 class="text-muted">Starting at $23</h6>
                         </div>
                     </a>
@@ -173,8 +165,8 @@
                 <div class="col-12 col-sm-4 text-center mb-5 product-thumb">
                     <a href="pages/item.html">
                         <div>
-                            <img class="img-thumbnail mb-3" src="images/offthegrid04-thumb.jpg" alt="art thumb">
-                            <h5 class="mb-1">Off the Grid 04</h5>
+                            <img class="img-thumbnail mb-3" src="images/aperture-576x576.jpg" alt="art thumb">
+                            <h5 class="mb-1">Aperture</h5>
                             <h6 class="text-muted">Starting at $27</h6>
                         </div>
                     </a>
@@ -182,8 +174,8 @@
                 <div class="col-12 col-sm-4 text-center mb-5 product-thumb">
                     <a href="pages/item.html">
                         <div>
-                            <img class="img-thumbnail mb-3" src="images/offthegrid04-thumb.jpg" alt="art thumb">
-                            <h5 class="mb-1">Off the Grid 04</h5>
+                            <img class="img-thumbnail mb-3" src="images/foldedLines-576x576.jpg" alt="art thumb">
+                            <h5 class="mb-1">Folded Lines</h5>
                             <h6 class="text-muted">Starting at $21</h6>
                         </div>
                     </a>
@@ -192,9 +184,9 @@
         </div>
 
         <!--MAKE YOUR OWN ART-->
-
-        <div class="container mb-5">
-            <h4 class="text-center mb-3">Rearrange to Make Your Own Art</h4>
+        <div class="subsection container mb-5">
+            <h3 class="text-center">How Do You Art?</h3>
+            <p class="text-muted text-center ">Drag shapes to rearrange</p>
             <div id="stage-parent">
                 <div id="artmaker"></div>
             </div>
@@ -202,208 +194,258 @@
 
     </main>
 
-    <!-- <svg id="footerArt" viewBox="0 0 1200 600">
-            <g stroke="black" stroke-width="2" fill="none">
-                <path
-                    d="M35.5,62.5l146,83h455s46-86,163-86,164,86,164,86h200V436.65h-904a32,32,0,0,1-32-32V393.5a32,32,0,0,1,32-32H1061v-78l-10.5,22" />
-            </g>
-        </svg> -->
-
     <!--FOOTER-->
     <footer>
         <svg id="footerTop" viewBox="0 0 1920 195">
             <g fill="#414141">
-                <path class="cls-1"
+                <path
                     d="M1920,195V174.8H1569.55c-68.35-84.19-172.66-138-289.55-138s-221.2,53.81-289.55,138H305.6L0,0V195Z" />
             </g>
         </svg>
         <div class="footer-box">
             <!-- <h2>"</h2> -->
-            <div class="container-fluid footer-content py-3">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-3">
-                        <h4>The object of Art is to give life a shape.</h4>
-                        <p>-William Shakespeare</p>
+            <div class="container footer-content py-5">
+                <div class="row">
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h5>The object of Art is to give life a shape.</h5>
+                        <p class="text-muted">-William Shakespeare</p>
                     </div>
-                    <div class="col-12 col-sm-2">
-                        <h5>Contact Us</h5>
-                        <h6>hello@formd.art</h6>
-                        <h6>800-213-2133</h6>
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h6>Contact Us</h6>
+                        <a href="pages/faq-contact.html#contactForm">
+                            <p class="mb-0">hello@formd.art</p>
+                        </a>
+                        <p>415-213-2133</p>
                     </div>
-                    <div class="col-12 col-sm-2">
-                        <h5>Questions?</h5>
-                        <h6>F.A.Q.</h6>
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h6>Questions?</h6>
+                        <a href="pages/faq-contact.html">
+                            <p>F.A.Q.</p>
+                        </a>
                     </div>
-                    <div class="col-12 col-sm-2">
-                        <h5>Follow Us</h5>
-                        <i class="fab fa-instagram fa-lg pr-2"></i>
-                        <i class="fab fa-twitter fa-lg pr-2"></i>
-                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    <div id="follow" class="col-12 col-sm-3 mb-4">
+                        <h6>Follow Us</h6>
+                        <i class="fab fa-instagram pr-2"></i>
+                        <i class="fab fa-twitter pr-2"></i>
+                        <i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
             </div>
 
         </div>
+    </footer>
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-        <!--this jquery version works with carousel-->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!--this jquery version works with carousel-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script> -->
 
-        <!--this jquery version works with drawsvg-->
-        <script src="https://code.jquery.com/jquery-3.3.0.min.js"
-            integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <!--this jquery version works with drawsvg-->
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js"
+        integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
-        <!-- KONVA JS -->
-        <script src="https://unpkg.com/konva@4.0.18/konva.min.js"></script>
+    <!-- KONVA JS -->
+    <script src="https://unpkg.com/konva@4.0.18/konva.min.js"></script>
 
-        <!-- DRAWSVG JS -->
-        <script src="js/jquery.drawsvg.js"></script>
+    <!-- DRAWSVG JS -->
+    <script src="js/jquery.drawsvg.js"></script>
 
-        <!--carousel-->
-        <script>
-            $('#homeCarousel').carousel({
-                interval: 4000,
-                pause: "hover",
-            })
-        </script>
+    <!--carousel-->
+    <script>
+        $('#homeCarousel').carousel({
+            interval: 4000,
+            pause: "hover",
+        })
+    </script>
 
-        <!--KONVA JS STAGE-->
-        <script>
-            // let's think our stage virtual size will be 1000x1000px
-            // but the real size will be different to fit user's page
-            // so the stage will be 100% visible on any device
-            var stageWidth = 1000;
-            var stageHeight = 600;
+    <!--KONVA JS STAGE-->
+    <script>
+        // let's think our stage virtual size will be 1000x1000px
+        // but the real size will be different to fit user's page
+        // so the stage will be 100% visible on any device
+        var stageWidth = 1000;
+        var stageHeight = 600;
 
-            var stage = new Konva.Stage({
-                container: 'artmaker',
-                width: stageWidth,
-                height: stageHeight
+        var stage = new Konva.Stage({
+            container: 'artmaker',
+            width: stageWidth,
+            height: stageHeight
+        });
+
+        var layer = new Konva.Layer();
+        stage.add(layer);
+
+        // SQUAREC
+        var squareC = new Konva.Rect({
+            x: 300,
+            y: 0,
+            fill: '#a1a1a1',
+            draggable: true,
+            width: 500,
+            height: 700
+        });
+
+        squareC.on('dragstart', function () {
+            this.moveToTop();
+            layer.draw();
+        });
+
+        squareC.on('dragmove', function () {
+            document.body.style.cursor = 'pointer';
+        });
+
+        squareC.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        squareC.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
+        layer.add(squareC);
+
+
+        // CIRCLEA
+        var circleA = new Konva.Circle({
+            radius: 300,
+            fill: '#363b3f',
+            draggable: true,
+            x: 900,
+            y: 150,
+        });
+
+        circleA.on('dragstart', function () {
+            this.moveToTop();
+            layer.draw();
+        });
+
+        circleA.on('dragmove', function () {
+            document.body.style.cursor = 'pointer';
+        });
+
+        circleA.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        circleA.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
+        layer.add(circleA);
+
+        // CIRCLEB
+        var circleB = new Konva.Circle({
+            radius: 400,
+            fill: '#ece8de',
+            draggable: true,
+            x: 200,
+            y: 450,
+        });
+
+        circleB.on('dragstart', function () {
+            this.moveToTop();
+            layer.draw();
+        });
+
+        circleB.on('dragmove', function () {
+            document.body.style.cursor = 'pointer';
+        });
+
+        circleB.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        circleB.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
+        layer.add(circleB);
+
+        // SQUAREA
+        var squareA = new Konva.Rect({
+            x: 0,
+            y: 0,
+            fill: '#e0bba7',
+            draggable: true,
+            width: 300,
+            height: 300,
+
+        });
+
+        squareA.on('dragstart', function () {
+            this.moveToTop();
+            layer.draw();
+        });
+
+        squareA.on('dragmove', function () {
+            document.body.style.cursor = 'pointer';
+        });
+
+        squareA.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        squareA.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
+
+        layer.add(squareA);
+
+        // SQUAREB
+        var squareB = new Konva.Rect({
+            x: 500,
+            y: 400,
+            fill: '#626262',
+            draggable: true,
+            width: 600,
+            height: 400
+        });
+
+        squareB.on('dragstart', function () {
+            this.moveToTop();
+            layer.draw();
+        });
+
+        squareB.on('dragmove', function () {
+            document.body.style.cursor = 'pointer';
+        });
+
+        squareB.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        squareB.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
+        layer.add(squareB);
+
+
+
+        function fitStageIntoParentContainer() {
+            var container = document.querySelector('#stage-parent');
+
+            // now we need to fit stage into parent
+            var containerWidth = container.offsetWidth;
+            // to do this we need to scale the stage
+            var scale = containerWidth / stageWidth;
+
+            stage.width(stageWidth * scale);
+            stage.height(stageHeight * scale);
+            stage.scale({
+                x: scale,
+                y: scale
             });
+            stage.draw();
+        }
 
-            var layer = new Konva.Layer();
-            stage.add(layer);
-
-            // CIRCLE
-            var circle = new Konva.Circle({
-                radius: 300,
-                fill: '#4f6273',
-                draggable: true,
-                x: 900,
-                y: 150,
-            });
-
-            circle.on('dragstart', function () {
-                this.moveToTop();
-                layer.draw();
-            });
-
-            circle.on('dragmove', function () {
-                document.body.style.cursor = 'pointer';
-            });
-
-            circle.on('mouseover', function () {
-                document.body.style.cursor = 'pointer';
-            });
-            circle.on('mouseout', function () {
-                document.body.style.cursor = 'default';
-            });
-            layer.add(circle);
-
-            // SQUARE
-            var box = new Konva.Rect({
-                x: 0,
-                y: 0,
-                fill: '#e0bba7',
-                draggable: true,
-                width: 300,
-                height: 300,
-
-            });
-
-            box.on('dragstart', function () {
-                this.moveToTop();
-                layer.draw();
-            });
-
-            box.on('dragmove', function () {
-                document.body.style.cursor = 'pointer';
-            });
-
-            box.on('mouseover', function () {
-                document.body.style.cursor = 'pointer';
-            });
-            box.on('mouseout', function () {
-                document.body.style.cursor = 'default';
-            });
-
-            layer.add(box);
-
-            // SQUARE
-            var box2 = new Konva.Rect({
-                x: 600,
-                y: 400,
-                fill: '#626262',
-                draggable: true,
-                width: 600,
-                height: 400
-            });
-
-            box2.on('dragstart', function () {
-                this.moveToTop();
-                layer.draw();
-            });
-
-            box2.on('dragmove', function () {
-                document.body.style.cursor = 'pointer';
-            });
-
-            box2.on('mouseover', function () {
-                document.body.style.cursor = 'pointer';
-            });
-            box2.on('mouseout', function () {
-                document.body.style.cursor = 'default';
-            });
-
-
-            layer.add(box2);
-
-            function fitStageIntoParentContainer() {
-                var container = document.querySelector('#stage-parent');
-
-                // now we need to fit stage into parent
-                var containerWidth = container.offsetWidth;
-                // to do this we need to scale the stage
-                var scale = containerWidth / stageWidth;
-
-                stage.width(stageWidth * scale);
-                stage.height(stageHeight * scale);
-                stage.scale({
-                    x: scale,
-                    y: scale
-                });
-                stage.draw();
-            }
-
-            fitStageIntoParentContainer();
-            // adapt the stage on any window resize
-            window.addEventListener('resize', fitStageIntoParentContainer);
-        </script>
+        fitStageIntoParentContainer();
+        // adapt the stage on any window resize
+        window.addEventListener('resize', fitStageIntoParentContainer);
+    </script>
 
 </body>
 
