@@ -280,7 +280,17 @@ p.text-muted {
 }
 
 #contactForm h3 {
-  font-family: "Lato"
+  font-family: "Lato";
+}
+
+.drawHead {
+  display:none;
+}
+
+@media (min-width: 576px) {
+  .drawHead {
+    display:block;
+  }
 }
 
 /*///FOOTER///*/

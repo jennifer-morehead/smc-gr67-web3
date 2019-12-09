@@ -342,12 +342,8 @@
 			console.log('monthly clicked');
 			$(this).prop('checked',true);
 			$('#oneTimeAmount').prop('checked',false);
-		});//toggle one time amount
-
-		
-		});
-
-		
+		});//toggle one time amount		
+		});		
 	</script>
 
 	<script>
@@ -357,11 +353,11 @@
 				console.log($("[type=submit]"));
 				$("[type=submit]").removeClass('disabled').removeAttr('disabled').data('dismiss', 'modal');
 			}
-		})
+		});
 
 		$('.modal form').submit(function (e) {
 			e.preventDefault();
-		}) //prevent submit
+		}); //prevent submit
 
 		$('#donateSubmit').click(function () {
 			$('#donateModal').modal('hide');

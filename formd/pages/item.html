@@ -149,14 +149,14 @@
                                         <div class="col-sm-8">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="frameRadio"
-                                                    id="framed" value="framed1" checked>
+                                                    id="framed" value="framed1" onchange="frameCharge()" checked>
                                                 <label class="form-check-label" for="frameRadio1">
                                                     Handcrafted Wood Frame
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="frameRadio"
-                                                    id="unframed" value="framed2">
+                                                    id="unframed" value="framed2" onchange="frameCharge()">
                                                 <label class="form-check-label" for="frameRadio2">
                                                     Unframed Print
                                                 </label>
@@ -167,7 +167,7 @@
                                 <fieldset class="form-group">
                                     <div class="row">
                                         <legend class="col-form-label col-sm-4 pt-0">Border Options</legend>
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-8" >
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="borderRadios"
                                                     id="fullBleed" value="border1" checked>
@@ -177,7 +177,7 @@
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="borderRadios"
-                                                    id="matteBorder" value="border2">
+                                                    id="matteBorder" value="border2" >
                                                 <label class="form-check-label" for="borderRadios2">
                                                     Faux Matted Border
                                                 </label>
@@ -351,15 +351,16 @@
 
         function frameCharge() {
             fCharge = 3;
-            if (document.getElementById('framed').checked = true) {
-                price.innerHTML = "$" + (size.value * quantity.value) + parseInt(fCharge);
+            if (document.getElementById('framed').checked == true) {
+                price.innerHTML = "$" + parseInt(size.value * quantity.value + fCharge);
                 console.log('framed');
             } else {
-                price.innerHTML = "$" + (size.value * quantity.value) - parseInt(fCharge);
+                price.innerHTML = "$" + parseInt(size.value * quantity.value - fCharge);
             }
         }
-
         frameCharge();
+        
+        
     </script>
 
 

@@ -39,7 +39,6 @@
     <title>Jennifer Morehead | Web 3 | Formd</title>
 </head>
 
-
 <body>
     <header>
         <!--NAVBAR-->
@@ -65,7 +64,7 @@
                 <a class="nav-link" href="pages/cart.html">
                     <i class="fa fa-shopping-cart"></i>
                     <!-- <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>shop-bag-09</title><g id="Layer_5" data-name="Layer 5"><path d="M23,9V23H1V9H23m1-1H0V24H24V8Z"/><path class="cls-1" d="M5,8.5A6.76,6.76,0,0,1,12,2a6.76,6.76,0,0,1,7,6.5"/></g></svg> -->
-                    <span id="cartItems"class="pl-1">0</span>
+                    <span id="cartItems" class="pl-1">0</span>
                 </a>
             </div>
 
@@ -76,8 +75,6 @@
                     <i class="fab fa-artstation fa-lg gray"></i>
                 </button>
             </div>
-
-
         </nav>
     </header>
 
@@ -122,9 +119,62 @@
             </div>
         </section>
 
+        <!--DRAW HEADER-->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <svg id="homeDraw1" viewBox="0 0 710 100" width="100%" height="100%">
+                        <g stroke="black" stroke-width="1" fill="none">
+                            <polyline class="cls-4" points="13 14 76 14 76 86 4 86 4 14" />
+                            <polyline class="cls-4" points="336.48 86 274 86 274 14 346 14 346 86" />
+                            <polyline class="cls-4" points="134.83 23.65 166 86 94 86 130 14" />
+                            <polyline class="cls-4" points="616 22.87 616 86 544 86 544 14 616 14" />
+                            <polyline class="cls-4" points="706 86 634 86 670 14 701.8 77.6" />
+                            <polyline class="cls-4" points="364 14 436 14 400 86 368.41 22.82" />
+                            <path class="cls-4" d="M254.66,59.75A36,36,0,1,1,256,50" />
+                            <path class="cls-4" d="M499,15.14A36,36,0,1,1,490,14" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-12 col-sm-4 drawHead">
+                    <svg id="homeDraw2" viewBox="0 0 360 100" width="100%" height="100%">
+                        <g stroke="#e0bba7" stroke-width="2" fill="none">
+                                <polyline class="cls-1" points="175.37 77.25 207 14 243 86 171 86"/>
+                                <polyline class="cls-1" points="247.06 22.12 279 86 207 86 243 14"/>
+                                <path class="cls-1" d="M139.8,14.87a36,36,0,1,1-7.88-.87"/>
+                                <g>
+                                  <polyline class="cls-1" points="27 41 81 41 81 59 27 59"/>
+                                  <polyline class="cls-1" points="27 15.37 27 87.37 45 87.37 45 15.37 36 15.37"/>
+                                  <polyline class="cls-1" points="81 87.37 81 15.37 63 15.37 63 87.37 72 87.37"/>
+                                </g>
+                                <g>
+                                  <polyline class="cls-1" points="288 14 333 14 333 32 288 32"/>
+                                  <polyline class="cls-1" points="288 69.37 333 69.37 333 87.37 288 87.37"/>
+                                  <polyline class="cls-1" points="306 41 333 41 333 59 306 59"/>
+                                  <polyline class="cls-1" points="306 15.37 306 87.37 288 87.37 288 15.37"/>
+                                </g>
+                              </g>
+                    </svg>
+                </div>
+                <div class="col-12 col-sm-4 drawHead">
+                    <svg id="homeDraw3" viewBox="0 0 710 100" width="100%" height="100%">
+                        <g stroke="black" stroke-width="1" fill="none">
+                            <polyline class="cls-4" points="697 14 634 14 634 86 706 86 706 14" />
+                            <polyline class="cls-4" points="373.52 86 436 86 436 14 364 14 364 86" />
+                            <polyline class="cls-4" points="575.17 23.65 544 86 616 86 580 14" />
+                            <polyline class="cls-4" points="94 22.87 94 86 166 86 166 14 94 14" />
+                            <polyline class="cls-4" points="4 86 76 86 40 14 8.2 77.6" />
+                            <polyline class="cls-4" points="346 14 274 14 310 86 341.59 22.82" />
+                            <path class="cls-4" d="M455.34,59.75A36,36,0,1,0,454,50" />
+                            <path class="cls-4" d="M211,15.14A36,36,0,1,0,220,14" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
         <!--HOME GALLERY-->
         <div class="container home-gallery mb-5">
-            <!-- <h1 class="rotate-text orange-bg">NEW ARRIVALS</h1> -->
             <div class="row mb-2">
                 <div class="col-12 col-sm-8 d-flex flex-column">
                     <img class="w-100 mb-2" src="images/la213-576x750.jpg" alt="art image">
@@ -268,6 +318,34 @@
             interval: 4000,
             pause: "hover",
         })
+    </script>
+
+    <!--Polyline converter-->
+    <script>
+        var polys = document.querySelectorAll('polygon,polyline');
+        [].forEach.call(polys, convertPolyToPath);
+
+        function convertPolyToPath(poly) {
+            var svgNS = poly.ownerSVGElement.namespaceURI;
+            var path = document.createElementNS(svgNS, 'path');
+            var points = poly.getAttribute('points').split(/\s+|,/);
+            var x0 = points.shift(),
+                y0 = points.shift();
+            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
+            if (poly.tagName == 'polygon') pathdata += 'z';
+            path.setAttribute('d', pathdata);
+            poly.parentNode.replaceChild(path, poly);
+        }
+    </script>
+    
+    <!--draw-->
+    <script>
+        var drawHome1 = $('#homeDraw1').drawsvg();
+        drawHome1.drawsvg('animate');
+        var drawHome2 = $('#homeDraw2').drawsvg();
+        drawHome2.drawsvg('animate');
+        var drawHome3 = $('#homeDraw3').drawsvg();
+        drawHome3.drawsvg('animate');
     </script>
 
     <!--KONVA JS STAGE-->

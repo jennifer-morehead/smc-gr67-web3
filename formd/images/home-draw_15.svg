@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e0bba7;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>home-draw</title>
+  <g id="Layer_13" data-name="Layer 13">
+    <g>
+      <polyline class="cls-1" points="175.37 77.25 207 14 243 86 171 86"/>
+      <polyline class="cls-1" points="247.06 22.12 279 86 207 86 243 14"/>
+      <path class="cls-1" d="M139.8,14.87a36,36,0,1,1-7.88-.87"/>
+      <g>
+        <polyline class="cls-1" points="27 41 81 41 81 59 27 59"/>
+        <polyline class="cls-1" points="27 15.37 27 87.37 45 87.37 45 15.37 36 15.37"/>
+        <polyline class="cls-1" points="81 87.37 81 15.37 63 15.37 63 87.37 72 87.37"/>
+      </g>
+      <g>
+        <polyline class="cls-1" points="288 14 333 14 333 32 288 32"/>
+        <polyline class="cls-1" points="288 69.37 333 69.37 333 87.37 288 87.37"/>
+        <polyline class="cls-1" points="306 41 333 41 333 59 306 59"/>
+        <polyline class="cls-1" points="306 15.37 306 87.37 288 87.37 288 15.37"/>
+      </g>
+    </g>
+  </g>
+</svg>
