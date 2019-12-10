@@ -1,0 +1,12 @@
+<svg id="homeDraw3" viewBox="0 0 710 100">
+ <g stroke="black" stroke-width="1" fill="none">
+      <polyline class="cls-4" points="697 14 634 14 634 86 706 86 706 14"/>
+      <polyline class="cls-4" points="373.52 86 436 86 436 14 364 14 364 86"/>
+      <polyline class="cls-4" points="575.17 23.65 544 86 616 86 580 14"/>
+      <polyline class="cls-4" points="94 22.87 94 86 166 86 166 14 94 14"/>
+      <polyline class="cls-4" points="4 86 76 86 40 14 8.2 77.6"/>
+      <polyline class="cls-4" points="346 14 274 14 310 86 341.59 22.82"/>
+      <path class="cls-4" d="M455.34,59.75A36,36,0,1,0,454,50"/>
+      <path class="cls-4" d="M211,15.14A36,36,0,1,0,220,14"/>
+    </g>
+</svg>

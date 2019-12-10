@@ -306,6 +306,11 @@ footer {
   position: relative;
 }
 
+.footer-box {
+  background-color: #414141;
+  min-height: 20vh;
+}
+
 /*for padding*/
 footer:before {
   content: "";
@@ -317,11 +322,6 @@ footer:before {
   footer:before {
     height: 124px;
   }
-}
-
-.footer-box {
-  background-color: #414141;
-  min-height: 20vh;
 }
 
 
@@ -339,9 +339,12 @@ footer:before {
   letter-spacing: 1px;
 }
 
-/*why is this not working?*/
-.footer-content a {
+.footer-content a p:hover {
   text-decoration: none;
+  color: #e0bba7;
+}
+
+.footer-content i:hover{
   color: #e0bba7;
 }
 
@@ -495,6 +498,21 @@ main:before {
   main:before {
     height: 124px;
   }
+}
+
+.modal-body {
+  background-image: url(../images/modal-bkg.jpg);
+  background-size: cover;
+}
+
+.modal-body h2{
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.modal-body p{
+  font-family: "Lato", sans-serif;
 }
 
 .navbar {

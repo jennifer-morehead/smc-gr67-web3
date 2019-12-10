@@ -53,6 +53,17 @@ function emailOnly() {
     }
 }
 
+/*checks for @ format modal*/
+function emailOnlyModal() {
+    var emailModal = document.getElementById('modalEmail');
+    var emails = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
+    if (emailModal.value.match(emails)) {
+        errorInput[6].style.display = "none";
+    } else {
+        errorInput[6].style.display = "block";
+    }
+}
+
 /*checks for valid states*/
 function statesOnly() {
     var state = document.getElementById('shippingState');
@@ -77,21 +88,21 @@ function numbersOnly() {
 
 
 (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
+	'use strict';
+	window.addEventListener('load', function () {
+	// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function (form) {
+			form.addEventListener('submit', function (event) {
+			if (form.checkValidity() === false) {
+				event.preventDefault();
+				event.stopPropagation();
+				}
+				form.classList.add('was-validated');
+			}, false);
+		});
+	}, false);
 })();
 
 

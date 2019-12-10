@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--   __                           
+        / /___ ___ __________________/
+   __  / / __ `__ \ ___Jennifer_____/
+  / /_/ / / / / / /____Morehead____/
+  \____/_/ /_/ /_/________________/ 
+    -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+
+
+    <title>Jennifer Morehead | Web 3 | Formd</title>
+</head>
+
+
+<body>
+    <header class="mb-5">
+        <!--NAVBAR-->
+        <nav class="navbar fixed-top navbar-expand-md navbar-fixed-top shadow-sm">
+            <a class="navbar-brand p-0" href="../index.html">form<span class="pink">D</span></a>
+
+            <!--NAV-->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+            </div>
+
+            <!--CART-->
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i><span id="cartItems"
+                        class="pl-1">0</span></a>
+            </div>
+
+            <!--TOGGLER-->
+            <div class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fab fa-artstation fa-lg gray"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!--START MAIN CONTENT-->
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Checkout</h2>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row align-items-start">
+                    <!--FORM-->
+                    <div class="col-12 col-sm-8">
+                        <form action="" method="get" name="checkout" autocomplete="on" class="needs-validation mb-5"
+                            novalidate>
+                            <!--SHIPPING GROUP-->
+                            <div class="col-12 mb-5" id="shippingGroup">
+                                <h5>Shipping</h5>
+                                <!--name-->
+                                <div class="form-row">
+                                    <!--first name-->
+                                    <div class="form-group col-12 col-md-6">
+                                        <input type="text" class="form-control" id="shippingFirstName"
+                                            placeholder="First Name" oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid name.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your first name.
+                                        </div>
+                                    </div>
+                                    <!--last name-->
+                                    <div class="form-group col-12 col-md-6">
+                                        <input type="text" class="form-control" id="shippingLastName"
+                                            placeholder="LastName" oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid name.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your last name.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--email-->
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <input type="email" class="form-control" id="shippingEmail"
+                                            placeholder="john@gmail.com" oninput="emailOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid email.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--address-->
+                                <div class="form-row">
+                                    <div class="col-md-9 mb-3">
+                                        <input type="text" class="form-control" id="shippingAddress"
+                                            placeholder="1234 Main St" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+                                    </div>
+                                </div>
+                                <!--city-->
+                                <div class="form-row">
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="shippingCity" placeholder="City"
+                                            oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid city.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your city.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--state/zip-->
+                                <div class="form-row">
+                                    <div class="col-6 mb-3">
+                                        <input type="text" class="form-control" id="shippingState" placeholder="State"
+                                            oninput="statesOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid state.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your state.
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <input type="text" class="form-control" id="shippingZip" placeholder="Zip"
+                                            oninput="numbersOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid zip code.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your zip code.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Default switch -->
+                                <div class="custom-control custom-switch mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitches"
+                                        onclick="toggleBilling();">
+                                    <label class="custom-control-label" for="customSwitches"></label>Billing Same as
+                                    Shipping</label>
+                                </div>
+                            </div>
+                            <!--BILLING GROUP-->
+                            <div class="col-12 mb-5" id="billingGroup">
+                                <h5>Billing</h5>
+                                <!--name-->
+                                <div class="form-row">
+                                    <!--first name-->
+                                    <div class="form-group col-12 col-md-6">
+                                        <input type="text" class="form-control" id="shippingFirstName"
+                                            placeholder="First Name" oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid name.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your first name.
+                                        </div>
+                                    </div>
+                                    <!--last name-->
+                                    <div class="form-group col-12 col-md-6">
+                                        <input type="text" class="form-control" id="shippingLastName"
+                                            placeholder="LastName" oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid name.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your last name.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--email-->
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <input type="email" class="form-control" id="shippingEmail"
+                                            placeholder="john@gmail.com" oninput="emailOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid email.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--address-->
+                                <div class="form-row">
+                                    <div class="col-md-9 mb-3">
+                                        <input type="text" class="form-control" id="shippingAddress"
+                                            placeholder="1234 Main St" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="shippingAddress2" placeholder="Apt">
+                                    </div>
+                                </div>
+                                <!--city-->
+                                <div class="form-row">
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="shippingCity" placeholder="City"
+                                            oninput="alphaOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid city.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your city.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--state/zip-->
+                                <div class="form-row">
+                                    <div class="col-6 mb-3">
+                                        <input type="text" class="form-control" id="shippingState" placeholder="State"
+                                            oninput="statesOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid state.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your state.
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <input type="text" class="form-control" id="shippingZip" placeholder="Zip"
+                                            oninput="numbersOnly();" required>
+                                        <div class="invalid-input">
+                                            Please enter a valid zip code.
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please enter your zip code.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--PAYMENT GROUP-->
+                            <div class="col-12">
+                                <h5>Payment</h5>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Credit Card</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Gift Card</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label class="name" for="creditCardName">Name (as it appears on your
+                                            card)</label>
+                                        <input type="name" class="form-control" id="creditCardName"
+                                            placeholder="Ex: John Smith" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label class="name" for="creditCardName">Card Number</label>
+                                        <input type="name" class="form-control" id="creditCardNumber"
+                                            placeholder="1234 4098 3987 1234" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-3">
+                                    <div class="form-group col-md-6">
+                                        <label class="name" for="creditCardExpiry">Expiry Date</label>
+                                        <input type="name" class="form-control" id="creditCardExpiry"
+                                            placeholder="01/20" required>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="name" for="creditCardSecurity">Security Code</label>
+                                        <input type="name" class="form-control" id="creditCardSecurity"
+                                            placeholder="&#8226;&#8226;&#8226;" required>
+                                    </div>
+                                </div>
+
+                                <button type="submit" value="submit"
+                                    class="btn-custom btn-lg btn-block p-2"><span>Submit</span></button>
+
+                                <!--END PAYMENT-->
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--ORDER SUMMARY-->
+                    <div class="col-12 col-sm-4 p-3 whitesmoke-bg">
+                        <h5>Order Summary</h5>
+                        <hr>
+                        <div class="row m-0">
+                            <div class="col-sm-8 p-0 ">
+                                <h6>Subtotal</h6>
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <p id="subtotal">$64.00</p>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-8 p-0 ">
+                                <h6>Tax</h6>
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <p id="tax">$6.40</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mx-0 mb-2">
+                            <div class="col-sm-8 p-0 d-inline">
+                                <h5>Total</h5>
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <p id="total">$70.40</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <svg id="footerTop" viewBox="0 0 1920 195">
+            <g fill="#414141">
+                <path
+                    d="M1920,195V174.8H1569.55c-68.35-84.19-172.66-138-289.55-138s-221.2,53.81-289.55,138H305.6L0,0V195Z" />
+            </g>
+        </svg>
+        <div class="footer-box">
+            <!-- <h2>"</h2> -->
+            <div class="container footer-content py-5">
+                <div class="row">
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h5>The object of Art is to give life a shape.</h5>
+                        <p class="text-muted">-William Shakespeare</p>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h6>Contact Us</h6>
+                        <a href="faq-contact.html#contactForm">
+                            <p class="mb-0">hello@formd.art</p>
+                        </a>
+                        <p>415-213-2133</p>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-4">
+                        <h6>Questions?</h6>
+                        <a href="faq-contact.html">
+                            <p>F.A.Q.</p>
+                        </a>
+                    </div>
+                    <div id="follow" class="col-12 col-sm-3 mb-4">
+                        <h6>Follow Us</h6>
+                        <i class="fab fa-instagram pr-2"></i>
+                        <i class="fab fa-twitter pr-2"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script> -->
+
+    <!--this jquery version works with drawsvg-->
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js"
+        integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+    <!-- KONVA JS -->
+    <script src="https://unpkg.com/konva@4.0.18/konva.min.js"></script>
+
+    <!-- DRAWSVG JS -->
+    <script src="../js/jquery.drawsvg.js"></script>
+
+    <!-- FORM VALIDATION JS -->
+    <script src="../js/form-validation.js"></script>
+
+    <!-- carousel -->
+    <script>
+        $('#productCarousel').carousel({
+            interval: 4000,
+            pause: "hover",
+        })
+    </script>
+
+<script>
+    var items = document.getElementById('cartItems');
+    items.innerHTML = 2;
+</script>
+
+
+
+    <!-- Add to Cart -->
+    <!-- <script>
+        var size = document.getElementById("selectSize");
+        var quantity = document.getElementById("selectQuantity")
+        var price = document.getElementById("price");
+        price.innerHTML = "$" + size.value;
+        size.onchange = function () {
+            price.innerHTML = "$" + (size.value * quantity.value);
+        }
+        quantity.onchange = function () {
+            price.innerHTML = "$" + (size.value * quantity.value);
+        }
+
+        var addItem = document.getElementById('addCart');
+        var items = document.getElementById('cartItems');
+        var count = parseInt(items.innerHTML);
+        addItem.addEventListener("click", function (event) {
+            count = parseInt(items.innerHTML);
+            items.innerHTML = count + parseInt(quantity.value);
+        });
+
+        function frameCharge() {
+            fCharge = 3;
+            if (document.getElementById('framed').checked = true) {
+                price.innerHTML = "$" + (size.value * quantity.value) + parseInt(fCharge);
+                console.log('framed');
+            } else {
+                price.innerHTML = "$" + (size.value * quantity.value) - parseInt(fCharge);
+            }
+        }
+
+        frameCharge();
+    </script> -->
+
+
+    <!--Polyline converter-->
+    <script>
+        var polys = document.querySelectorAll('polygon,polyline');
+        [].forEach.call(polys, convertPolyToPath);
+
+        function convertPolyToPath(poly) {
+            var svgNS = poly.ownerSVGElement.namespaceURI;
+            var path = document.createElementNS(svgNS, 'path');
+            var points = poly.getAttribute('points').split(/\s+|,/);
+            var x0 = points.shift(),
+                y0 = points.shift();
+            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
+            if (poly.tagName == 'polygon') pathdata += 'z';
+            path.setAttribute('d', pathdata);
+            poly.parentNode.replaceChild(path, poly);
+        }
+    </script>
+
+    <!--Draw SVG Function-->
+    <script>
+        var fSVG = $('#footerArt').drawsvg();
+        fSVG.drawsvg('animate');
+    </script>
+
+</body>
+
+</html>
