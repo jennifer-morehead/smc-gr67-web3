@@ -92,15 +92,15 @@
                     <div class="col-12 col-sm-4 d-flex flex-column">
                         <div class="p-2 mb-2 text-center">
                             <a href="la213.html">
-                                    <img class="w-100 mb-3" src="../images/la213-576x750.jpg" alt="art image">
+                                <img class="w-100 mb-3" src="../images/la213-576x750.jpg" alt="art image">
                             </a>
-                            
+
                             <h5 class="mb-1">LA 213</h5>
                             <h6 class="text-muted">Starting at $23</h6>
                         </div>
                         <div class="p-2 mb-2 text-center">
                             <a href="foldedLines.html">
-                                    <img class="w-100 mb-3" src="../images/foldedLines-576x576.jpg" alt="art image">
+                                <img class="w-100 mb-3" src="../images/foldedLines-576x576.jpg" alt="art image">
 
                             </a>
                             <h5 class="mb-1">Folded Lines</h5>
@@ -120,7 +120,7 @@
                     <div class="col-12 col-sm-4 d-flex flex-column">
                         <div class="p-2 mb-2 text-center">
                             <a href="aperture.html">
-                                    <img class="w-100 mb-3" src="../images/aperture-576x576.jpg" alt="art image">
+                                <img class="w-100 mb-3" src="../images/aperture-576x576.jpg" alt="art image">
 
                             </a>
                             <h5 class="mb-1">Aperture</h5>
@@ -242,75 +242,6 @@
 
     <!-- DRAWSVG JS -->
     <script src="../js/jquery.drawsvg.js"></script>
-
-    <!-- carousel -->
-    <script>
-        $('#productCarousel').carousel({
-            interval: 4000,
-            pause: "hover",
-        })
-    </script>
-
-
-
-    <!-- Add to Cart -->
-    <!-- <script>
-        var size = document.getElementById("selectSize");
-        var quantity = document.getElementById("selectQuantity")
-        var price = document.getElementById("price");
-        price.innerHTML = "$" + size.value;
-        size.onchange = function () {
-            price.innerHTML = "$" + (size.value * quantity.value);
-        }
-        quantity.onchange = function () {
-            price.innerHTML = "$" + (size.value * quantity.value);
-        }
-
-        var addItem = document.getElementById('addCart');
-        var items = document.getElementById('cartItems');
-        var count = parseInt(items.innerHTML);
-        addItem.addEventListener("click", function (event) {
-            count = parseInt(items.innerHTML);
-            items.innerHTML = count + parseInt(quantity.value);
-        });
-
-        function frameCharge() {
-            fCharge = 3;
-            if (document.getElementById('framed').checked = true) {
-                price.innerHTML = "$" + (size.value * quantity.value) + parseInt(fCharge);
-                console.log('framed');
-            } else {
-                price.innerHTML = "$" + (size.value * quantity.value) - parseInt(fCharge);
-            }
-        }
-
-        frameCharge();
-    </script> -->
-
-
-    <!--Polyline converter-->
-    <script>
-        var polys = document.querySelectorAll('polygon,polyline');
-        [].forEach.call(polys, convertPolyToPath);
-
-        function convertPolyToPath(poly) {
-            var svgNS = poly.ownerSVGElement.namespaceURI;
-            var path = document.createElementNS(svgNS, 'path');
-            var points = poly.getAttribute('points').split(/\s+|,/);
-            var x0 = points.shift(),
-                y0 = points.shift();
-            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
-            if (poly.tagName == 'polygon') pathdata += 'z';
-            path.setAttribute('d', pathdata);
-            poly.parentNode.replaceChild(path, poly);
-        }
-    </script>
-
-    <!--Draw SVG Function-->
-    <script>
-        var fSVG = $('#footerArt').drawsvg();
-        fSVG.drawsvg('animate');
-    </script>
 
 </body>
 

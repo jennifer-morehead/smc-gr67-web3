@@ -61,7 +61,7 @@
             <!--CART-->
             <div class="navbar-nav ml-auto">
                 <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i><span id="cartItems"
-                        class="pl-1">0</span></a>
+                        class="pl-1"></span></a>
             </div>
 
             <!--TOGGLER-->
@@ -328,9 +328,6 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" value="submit"
-                                    class="btn-custom btn-lg btn-block p-2"><span>Submit</span></button>
-
                                 <!--END PAYMENT-->
                             </div>
                         </form>
@@ -365,13 +362,12 @@
                                 <p id="total">$70.40</p>
                             </div>
                         </div>
+                        <button type="submit" value="submit"
+                        class="btn-custom btn-lg btn-block p-2"><span>Submit</span></button>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
     </main>
 
     <!--FOOTER-->
@@ -442,73 +438,9 @@
     <!-- FORM VALIDATION JS -->
     <script src="../js/form-validation.js"></script>
 
-    <!-- carousel -->
     <script>
-        $('#productCarousel').carousel({
-            interval: 4000,
-            pause: "hover",
-        })
-    </script>
-
-
-
-    <!-- Add to Cart -->
-    <!-- <script>
-        var size = document.getElementById("selectSize");
-        var quantity = document.getElementById("selectQuantity")
-        var price = document.getElementById("price");
-        price.innerHTML = "$" + size.value;
-        size.onchange = function () {
-            price.innerHTML = "$" + (size.value * quantity.value);
-        }
-        quantity.onchange = function () {
-            price.innerHTML = "$" + (size.value * quantity.value);
-        }
-
-        var addItem = document.getElementById('addCart');
         var items = document.getElementById('cartItems');
-        var count = parseInt(items.innerHTML);
-        addItem.addEventListener("click", function (event) {
-            count = parseInt(items.innerHTML);
-            items.innerHTML = count + parseInt(quantity.value);
-        });
-
-        function frameCharge() {
-            fCharge = 3;
-            if (document.getElementById('framed').checked = true) {
-                price.innerHTML = "$" + (size.value * quantity.value) + parseInt(fCharge);
-                console.log('framed');
-            } else {
-                price.innerHTML = "$" + (size.value * quantity.value) - parseInt(fCharge);
-            }
-        }
-
-        frameCharge();
-    </script> -->
-
-
-    <!--Polyline converter-->
-    <script>
-        var polys = document.querySelectorAll('polygon,polyline');
-        [].forEach.call(polys, convertPolyToPath);
-
-        function convertPolyToPath(poly) {
-            var svgNS = poly.ownerSVGElement.namespaceURI;
-            var path = document.createElementNS(svgNS, 'path');
-            var points = poly.getAttribute('points').split(/\s+|,/);
-            var x0 = points.shift(),
-                y0 = points.shift();
-            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
-            if (poly.tagName == 'polygon') pathdata += 'z';
-            path.setAttribute('d', pathdata);
-            poly.parentNode.replaceChild(path, poly);
-        }
-    </script>
-
-    <!--Draw SVG Function-->
-    <script>
-        var fSVG = $('#footerArt').drawsvg();
-        fSVG.drawsvg('animate');
+        items.innerHTML = 2;
     </script>
 
 </body>

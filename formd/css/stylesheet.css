@@ -156,9 +156,9 @@ p.text-muted {
 .btn-custom span:after {
   content: '\00bb';
   position: absolute;
-  font-size: 28px;
+  font-size: 24px;
   opacity: 0;
-  top: -12px;
+  top: -8px;
   right: -20px;
   transition: 0.5s;
 }
@@ -319,14 +319,11 @@ footer:before {
   }
 }
 
-
-
 .footer-box {
   background-color: #414141;
   min-height: 20vh;
 }
 
-.footer-content {}
 
 @media (max-width: 575.98px) {
   .footer-content {
@@ -340,6 +337,12 @@ footer:before {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+/*why is this not working?*/
+.footer-content a {
+  text-decoration: none;
+  color: #e0bba7;
 }
 
 .footer-content h6 {
@@ -465,9 +468,9 @@ footer:before {
 .link-btn span:after {
   content: '\00bb';
   position: absolute;
-  font-size: 28px;
+  font-size: 24px;
   opacity: 0;
-  top: -12px;
+  top: -8px;
   right: -20px;
   transition: 0.5s;
 }
@@ -628,6 +631,8 @@ picture img {
   border: none;
   background-color: whitesmoke;
 }
+
+
 #stage-parent {
   width: 100%;
 }
